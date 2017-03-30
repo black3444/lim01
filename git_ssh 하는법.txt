@@ -1,0 +1,2 @@
+[깃 : ssh 하는법 / 아이디,비번을 다르게 사용할 경우 git은 여러개의 id를 가지는걸 해당시키지 않기 때문에 ssh로 인증받아서 넘어가야 push를 시킬수 있다]
+http://recoveryman.tistory.com/283
