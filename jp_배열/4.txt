@@ -1,0 +1,6 @@
+each() 메소드 형태
+-$.each(object, function(index, item){});
+-$(selector).each(function(index, item){});
+
+
+출처: http://ekstory.tistory.com/7 [ekStory]

@@ -1,0 +1,50 @@
+<select id="selector">
+<option>언어를 선택해 주세요.</option>
+
+<?php
+
+	$langNames = array(
+		    'id' => '인도네시아',
+		    'ua' => '우크라이나',
+		    'uz' => '우즈베크',
+		    'pt' => '포르투갈',
+		    'al' => '알바니아',
+		    'ru' => '러시아',
+		    'tr' => '터키',
+		    'ge' => '조지아',
+		    'vn' => '베트남',
+		    'mn' => '몽골',
+		    'kh' => '캄보디아',
+		    'la' => '라틴',
+		    'nl' => '네덜란드',
+		    'ro' => '루마니아',
+		    'sw' => '스와힐리',
+		    'sv' => '스웨덴',
+		    'ar' => '아랍',
+		    'it' => '이탈리아',
+		    'cs' => '체코',
+		    'th' => '태국',
+		    'fa' => '페르시아',
+		    'pl' => '폴란드',
+		    'hu' => '헝가리',
+		    'hi' => '힌디',
+		    'ne' => '네팔'
+    );
+    function DisaplyCountry(){
+    	echo $this -> country;
+    }
+
+
+        foreach ($langNames as $lang => $country) {
+?>
+				<option value="<?= $lang ?>"><?= $country ?></option>
+<?php
+		}
+
+	} else {
+
+		include $lang;
+
+	}
+?>
+</select>

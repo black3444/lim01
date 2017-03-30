@@ -1,0 +1,14 @@
+	$(".btn").click(function(){
+		$(this).css("border","1px solid #f00");
+
+			str = "자바 프로그램, Like father, like son.";
+
+				
+			str="one two three four five";
+			array=str.split(" ");
+			for(var s in array){
+				
+			}
+
+		return false;
+	});

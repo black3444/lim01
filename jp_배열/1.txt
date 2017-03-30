@@ -1,0 +1,35 @@
+		<a href='#' class='inner'>
+			<?
+			$bann_lang = array("th","tr","id","ru","ua","vn","hi","nl","uz");
+			if($layoutType=="pc"){ ?>
+				<? if(in_array($langId, $bann_lang)) { ?>
+					<? if($langId == "th") { ?>
+						<!--[D] pc버전일때는 각 사전별 이미지와 대체텍스트로 대체 합니다. -->
+						<img src='img/<?=$langId ?>/banner_opendic1.jpg' alt='전세계 이용자들이 만들어가는 글로벌 오픈사전 부라파대학 한국어학과가 함께 합니다.'>
+						<!-- 랜덤 노출
+						<img src='img/<?=$langId ?>/banner_opendic2.jpg' alt='전세계 이용자들이 만들어가는 글로벌 오픈사전 송클라대학 한국어학과가 함께 합니다.'>
+						-->
+					<? } else { ?>
+						<!--[D] pc버전일때는 각 사전별 이미지와 대체텍스트로 대체 합니다. -->
+						<img src='img/<?=$langId ?>/banner_opendic.jpg' alt='전세계 이용자들이 만들어가는 글로벌 오픈사전 부라파대학 한국어학과가 함께 합니다.'>
+					<? } ?>
+				<? } else { ?>
+					<!--[D] pc버전 기본이미지 -->
+					<img src='img/common/banner_opendic.jpg' alt='전세계 이용자들이 만들어가는 글로벌 오픈사전 단어 등록하고 단체 참여해 보세요.'>
+				<? } ?>
+					<!-- 언어스킨 변경시 이미지 파일명 뒤에 "_langskin" 으로 적용, 태국어는 1, 2 숫자 추가, alt 속성값은 언어스킨 내용에 맞게 넣어주세요.
+					<img src='img/<?=$langId ?>/banner_opendic_langskin.jpg' alt='전세계 이용자들이 만들어가는 글로벌 오픈사전 단어 등록하고 단체 참여해 보세요.'>
+					-->
+			<? } else { ?>
+				<!--[D] 모바일버전일때는 아래의 내용으로 대체 합니다. -->
+				<span class='cont_wrap'>
+					<span class='tit'>전세계 이용자들이 만들어가는<br><em>글로벌 오픈사전</em></span>
+					<span class='dsc'>단어 등록하고 단체 참여해 보세요</span>
+					<? if(in_array($langId,$bann_lang)){ ?>
+						<img src='img/<?=$langId ?>/openbanner_logo.png' alt='오픈사전' class='logo'>
+					<? } else { ?>
+						<img src='img/common/openbanner_logo.png' alt='오픈사전' class='logo'>
+					<? } ?>
+				</span>
+			<? } ?>
+		</a>

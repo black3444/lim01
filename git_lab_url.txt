@@ -1,0 +1,6 @@
+[gitlab]
+
+http://gitlab2.uit.nhncorp.com/users/sign_in
+
+1. 회원가입 : 아이디 비번만들기
+2.
