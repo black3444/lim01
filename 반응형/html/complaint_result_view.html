@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+<script src="../js/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/seoul-common-gnb.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../css/board.css" />
+
+<!-- [D]서브관련 css 추가 -->
+<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+
+<script type="text/javascript" src="../js/jquery-1.12.4.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script type="text/javascript" src="../js/jquery.cycle2.js"></script>
+<script src="../js/gnb.js"></script>
+<script src="../js/design.js"></script>
+
+<!-- [D]서브관련 js 추가 -->
+<script type="text/javascript" src="../js/sub.js"></script>
+
+<title>민원처리 결과확인 : 사이버고객센터</title>
+</head>
+<body>
+
+					<!-- [s]content_inner -->
+					<div class="content_inner">
+						
+						<!-- [s]stitle1 -->
+						<div class="stitle1">
+							<h3 class="tit">민원처리 결과확인</h3>
+						</div>
+						<!-- //[e]stitle1 -->
+
+						<ul class="notice_lst1">
+							<li class="notice_item1">민원이 종료되었거나, 내부적인 처리가 완료된 경우에는 취소가 불가하오니 양해하여 주시기 바랍니다. </li>
+						</ul>
+
+						<div class="area_space1"></div>
+
+						<div class="value_txt_sec">
+							<span class="value_txt_dsc"><em class="point_red">*</em> 는 필수입력사항입니다.</span>
+						</div>
+
+						<div class="tbl_line_sec1">
+							<table class="tbl_board1" summary="민원사무명,신청일,처리상태,민원취소">
+								<caption><span class="blind">민원처리 결과확인 내역</span></caption>
+								<colgroup>
+									<col />
+									<col style="width:75px" />
+									<col style="width:20%" />
+									<col style="width:23%" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">민원사무명</th>
+										<th scope="col">신청일</th>
+										<th scope="col">처리상태</th>
+										<th scope="col" class="cell_last">민원취소</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="cell_left"><a href="#">수질검사신청</a></td>
+										<td>2018/09/06 09:33:43</td>
+										<td>민원완료(시민취소)</td>
+										<td class="cell_last">취소완료</td>
+									</tr>
+									<tr>
+										<td class="cell_left"><a href="#">소유자(사용자)명의변경신고</a></td>
+										<td>2018/09/06 09:33:43</td>
+										<td>민원완료(시민취소)	</td>
+										<td class="cell_last">취소안됨</td>
+									</tr>
+									<tr>
+										<td class="cell_left"><a href="#">소유자(사용자)명의변경신고</a></td>
+										<td>2018/09/06 09:33:43</td>
+										<td>민원완료(시민취소)	</td>
+										<td class="cell_last">
+											<button type="button" class="btn_inline_sm1">민원취소</button>											
+										</td>
+									</tr>
+									<tr>
+										<td class="cell_left"><a href="#">수도요금바로알림서비스신청(신규/변경/해지)</a></td>
+										<td>2018/09/06 09:33:43</td>
+										<td>민원완료(시민취소)	</td>
+										<td class="cell_last">
+											<button type="button" class="btn_inline_sm1">민원취소</button>											
+										</td>
+									</tr>
+									<tr>
+										<td class="cell_left"><a href="#">검침일안내서비스신청</a></td>
+										<td>2018/09/06 09:33:43</td>
+										<td>민원완료(시민취소)	</td>
+										<td class="cell_last">
+											<button type="button" class="btn_inline_sm1">민원취소</button>											
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<!-- [s]paging -->
+						<div class="paging">
+							<span class="paging_inner">
+								<a href="#" class="page">1</a>
+								<a href="#" class="page">2</a>
+								<strong class="page">3 <span class="blind">현재페이지</span></strong>
+								<a href="#" class="page">4</a>
+								<a href="#" class="page">5</a>
+								<a href="#" class="page">6</a>
+								<a href="#" class="page">7</a>
+								<a href="#" class="page">8</a>
+								<a href="#" class="page">9</a>
+								<a href="#" class="page">10</a>
+								<a href="#" class="page page_first"><span class="blind">처음 페이지</span></a>
+								<a href="#" class="page page_prev"><span class="blind">이전페이지</span></a>
+								<a href="#" class="page page_next"><span class="blind">다음페이지</span></a>
+								<a href="#" class="page page_last"><span class="blind">마지막 페이지</span></a>
+							</span>
+						</div>
+						<!-- //[e]paging -->
+
+						<div class="area_space1"></div>
+
+
+						
+						<!-- [D]선택시 : step_item1 클래스에 is_select 추가 -->
+						<ol class="step_area2">
+							<li class="step_item2 is_select">신청</li>
+							<li class="step_item2">민원접수</li>
+							<li class="step_item2">해당과 접수</li>
+							<li class="step_item2">완료</li>
+						</ol>
+
+						<div class="tbl_line_sec1 tbl_line_sec1_mt1">
+							<table class="tbl_board1" summary="처리단계,사업소,부서,일시">
+								<caption><span class="blind">처리상태 내역</span></caption>
+								<colgroup>
+									<col />
+									<col style="width:28%" />
+									<col style="width:24%" />
+									<col style="width:75px" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">처리단계</th>
+										<th scope="col">사업소</th>
+										<th scope="col">부서</th>
+										<th scope="col" class="cell_last">일시</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>신청</td>
+										<td>중부수도사업소</td>
+										<td>행정지원과</td>
+										<td class="cell_last">2018/09/06 09:33:43</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+
+					</div>
+					<!-- //[e]content_inner -->
+</body>
+</html>

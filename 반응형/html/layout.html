@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+<script src="../js/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/seoul-common-gnb.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../css/board.css" />
+
+<!-- [D]서브관련 css 추가 -->
+<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+
+<script type="text/javascript" src="../js/jquery-1.12.4.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script type="text/javascript" src="../js/jquery.cycle2.js"></script>
+<script src="../js/gnb.js"></script>
+<script src="../js/design.js"></script>
+
+<!-- [D]서브관련 js 추가 -->
+<script type="text/javascript" src="../js/sub.js"></script>
+
+<title>레이아웃 : 사이버고객센터</title>
+
+	<script type="text/javascript">
+	/*
+	document.domain='seoul.go.kr';
+	function setResponsive2(rate) {		
+		document.getElementById('if_div').style.paddingBottom = rate + "%"; 
+	}
+	*/
+	//document.domain='seoul.go.kr';
+	function setResponsive(ratio) {		
+		var adjustRatio = ratio + 5;
+		document.getElementById('if_div').style.paddingBottom = adjustRatio + "%"; 
+	}
+	</script>
+
+
+</head>
+
+<body>
+
+	<!-- [s]seoul-common-gnb -->
+	<div id="seoul-common-gnb">
+		<div id="seoul-gnb-plugin">		
+			<div class="seoul-gnb-holder">			
+				
+				<p class="seoul-gnb-link"><a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=logo&amp;link=//www.seoul.go.kr" target="_blank" title="새창열림" class="seoul-gnb-icon-link wise-link" data-kind="logo">서울특별시</a></p>			
+				
+				<dl class="seoul-gnb-news">				
+					<dt><a href="//www.seoul.go.kr/v2012/news/list.html" target="_blank" title="새창열림(서울소식)" class="seoul-gnb-icon-notice">서울소식</a></dt>				
+					<dd><a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=hotissue&amp;link=https://env.seoul.go.kr/?p=79467&amp;preview=true " target="_blank" title="새창열림">아파트 태양광 설치 및 에너지절약 활성화 포럼 개최 </a></dd>			
+				</dl>			
+
+				<dl class="seoul-gnb-menu">				
+					<dt>주요메뉴</dt>				
+					<dd><a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=seoulnews&amp;link=//www.seoul.go.kr/v2012/news/list.html" target="_blank" title="새창열림" class="seoul-gnb-icon-menu1 wise-link" data-kind="seoulnews">서울소식</a></dd>	<dd><a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=eungdapso&amp;link=//eungdapso.seoul.go.kr/" target="_blank" title="새창열림" class="seoul-gnb-icon-menu2 wise-link" data-kind="eungdapso">응답소</a></dd>
+					<dd><a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=opengov&amp;link=//opengov.seoul.go.kr/" target="_blank" title="새창열림" class="seoul-gnb-icon-menu3 wise-link" data-kind="opengov">정보공개</a></dd>
+					<dd>
+						<button type="button" class="seoul-gnb-icon-menu4">분야별정보 열기</button>
+						<div class="seoul-gnb-menu-section" style="display: none;">
+							<dl>
+								<dt>분야별정보</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=welfare&amp;link=//welfare.seoul.go.kr/" target="_blank" title="새창열림" class="wise-link" data-kind="welfare">
+												<span class="seoul-gnb-icon-section1"></span> 복지
+											</a>
+										</li>
+										<li>
+											<a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=woman&amp;link=//woman.seoul.go.kr/" target="_blank" title="새창열림" class="wise-link" data-kind="woman">
+												<span class="seoul-gnb-icon-section2"></span> 여성·가족
+											</a>
+										</li>
+										<li>
+											<a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=economy&amp;link=//economy.seoul.go.kr/" target="_blank" title="새창열림" class="wise-link" data-kind="economy">
+												<span class="seoul-gnb-icon-section11"></span> 경제·일자리
+											</a>
+										</li>
+										<li>
+											<a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=safe&amp;link=//safe.seoul.go.kr/" target="_blank" title="새창열림" class="wise-link" data-kind="safe">
+												<span class="seoul-gnb-icon-section5"></span> 안전
+											</a>
+										</li>
+										<li>
+											<a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=citybuild&amp;link=//citybuild.seoul.go.kr/" target="_blank" title="새창열림" class="wise-link" data-kind="citybuild">
+												<span class="seoul-gnb-icon-section4"></span> 주택·도시계획
+											</a>
+										</li>
+										<li>
+											<a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=env&amp;link=//env.seoul.go.kr/" target="_blank" title="새창열림" class="wise-link" data-kind="env">
+												<span class="seoul-gnb-icon-section3"></span> 환경
+											</a>
+										</li>
+										<li>
+											<a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=sculture&amp;link=//sculture.seoul.go.kr/" target="_blank" title="새창열림" class="wise-link" data-kind="sculture">
+												<span class="seoul-gnb-icon-section7"></span> 문화·관광
+											</a>
+										</li>
+										<li>
+											<a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=health&amp;link=//health.seoul.go.kr/" target="_blank" title="새창열림" class="wise-link" data-kind="health">
+												<span class="seoul-gnb-icon-section8"></span> 건강
+											</a>
+										</li>
+										<li>
+											<a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=traffic&amp;link=//traffic.seoul.go.kr/" target="_blank" title="새창열림" class="wise-link" data-kind="traffic">
+												<span class="seoul-gnb-icon-section9"></span> 교통
+											</a>
+										</li>
+										<li>
+											<a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=infra&amp;link=//infra.seoul.go.kr/" target="_blank" title="새창열림" class="wise-link" data-kind="infra">
+												<span class="seoul-gnb-icon-section10"></span> 건설
+											</a>
+										</li>
+										<li>
+											<a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=finance&amp;link=//finance.seoul.go.kr/" target="_blank" title="새창열림" class="wise-link" data-kind="finance">
+												<span class="seoul-gnb-icon-section6"></span> 세금
+											</a>
+										</li>
+										<li>
+											<a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=gov&amp;link=//gov.seoul.go.kr/" target="_blank" title="새창열림" class="wise-link" data-kind="gov">
+												<span class="seoul-gnb-icon-section12"></span> 행정
+											</a>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							<p>
+								<a href="//www.seoul.go.kr/seoulgnb/seoulgnblog.html?gid=G066&amp;kind=allservice&amp;link=//www.seoul.go.kr/servicemap/" target="_blank" title="새창열림" class="wise-link" data-kind="allservice">
+									<span class="seoul-gnb-icon-service"></span> 서비스 전체보기
+								</a>
+							</p>
+							<button type="button"><span class="seoul-gnb-icon-service-close"></span><span class="hd-element">분야별 정보 닫기</span></button>
+						</div>
+					</dd>
+				</dl>
+
+			</div>
+		</div>
+	</div>
+	<!-- //[e]seoul-common-gnb -->    
+
+	
+	<!-- [s]wrap -->
+	<div class="wrap">
+
+		<!-- [s]HEADER -->
+        <div class="header">
+
+			<div class="login-group">
+                <div>
+                    <a href="#">홈</a> ㅣ <a href="#">로그인</a> ㅣ <a href="#">회원가입</a> ㅣ <a href="#">이용안내</a> ㅣ <a href="#">사이트맵</a> ㅣ <a href="#">상수도사업본부</a> <span class="view">화면크기<span><button type="button" class="btn-plus">크게보기</button><button type="button" class="btn-minus">작게보기</button></span></span>
+                </div>
+            </div>
+
+            <div class="gnb-group">
+                <div>
+                    <h1><a href="#" ><img src="../images/common/logo.png" alt="Arisu 아리수 사이버고객센터" /></a></h1>
+                    <div class="gnb">
+                        <ul>
+                            <li>
+								<a href="#">요금조회</a>
+                                <ul>
+                                    <li><a href="#">요금조회</a></li>
+                                    <li><a href="#">요금납부방법</a></li>
+                                    <li><a href="#">요금감면제도</a></li>
+                                    <li><a href="#">요금계산</a></li>
+                                    <li><a href="#">요금감면제도</a></li>
+                                    <li><a href="#">요금일할계산</a></li>
+                                </ul>
+                            </li>
+                            <li>
+								<a href="#">민원신청</a>
+                                <ul>
+                                    <li class="active-m"><a href="#">온라인민원신청</a></li>
+                                    <li><a href="#">민원처리결과확인</a></li>
+                                    <li><a href="#">급수공사지가상계산</a></li>
+                                </ul>
+                            </li>
+                            <li>
+								<a href="#">이사정산</a>
+                                <ul>
+                                    <li><a href="#">이사정산내역</a></li>
+                                    <li><a href="#">이사정산요금계산</a></li>
+                                    <li><a href="#">이사정산내역</a></li>
+                                </ul>
+                            </li>
+                            <li>
+								<a href="#">자가검침</a>
+                                <ul>
+                                    <li><a href="#">자가검침안내</a></li>
+                                    <li><a href="#">자가검침입력</a></li>
+                                    <li><a href="#">자가검침입력내역</a></li>
+                                    <li><a href="#">자가검침발송내역</a></li>
+                                    <li><a href="#">자가검침 정보변경</a></li>
+                                </ul>
+                            </li>
+                            <li>
+								<a href="#">알림마당</a>
+                                <ul>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">자주하는질문</a></li>
+                                    <li><a href="#">민원사무편람</a></li>
+                                    <li><a href="#">요금업종별요율</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gnb-m">
+                        <div class="search"><div class="search-g"><input type="text" /><button type="button" class="toggle"></button><button type="submit"></button></div><button type="button" class="mb"></button></div>
+                        <div class="headerBtn"><a href="#">고객번호 찾기</a><a href="#">원격연결</a></div>
+                        <div class="tablet"><button type="button"></button></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-con">
+                <ul>
+                    <li><a href="#" ><span>로그인</span></a></li>
+                    <li><a href="#" ><span>고객번호찾기</span></a></li>
+                    <li class="hide"><a href="#" ><span>회원가입</span></a></li>
+                    <li class="hide"><a href="#" ><span>이용안내</span></a></li>
+                </ul>
+            </div>
+
+        </div>
+		<!-- //[e]HEADER -->
+
+
+		<!-- [s]CONTENTS -->
+		<div class="content-area">
+			<div>
+
+				<!-- [s]lnb -->
+                <div class="left-con">
+                    <h2>알림마당</h2>
+                    <ul>
+						<li class="on">
+							<a href="#">공지사항</a>
+							<ul>
+								<li>
+									<a href="#" class="on">공지사항</a>
+								</li>
+								<li>
+									<a href="#">보도자료</a>
+								</li>
+								<li>
+									<a href="#">자료실</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">자주하는질문</a>
+							<ul>
+								<li><a href="#">테스트</a></li>
+								<li><a href="#">테스트</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">민원사무편람</a>
+							<ul>
+								<li><a href="#">테스트</a></li>
+								<li><a href="#">테스트</a></li>
+							</ul>
+						</li>
+						<li class="no-child"><a href="#">요금업종별요율표</a></li>
+                    </ul>
+                </div>
+				<!-- //[e]lnb -->
+
+				<!-- [s]content -->
+                <div class="right-con">
+					
+					<!--
+					<div id="if_div" style="position:relative;overflow:hidden;height:100%;">
+						<iframe id="if_inner" src="online_complaint.html" style="height:100%; width:100%;" title="컨텐츠 페이지" frameborder="0"></iframe>
+					</div>
+					-->
+
+					<div id="if_div" style="position: relative; display: block; height: 0px; padding: 0px 0px 220%; overflow: hidden;">
+						<iframe id="if_inner" src="complaint_write2.html" style="position:absolute; top:0; left:0; right:0; bottom:0; height:100%; width:100%; border:0;"></iframe>
+					</div>
+
+
+				</div>
+				<!-- //[e]content -->
+
+				<!-- [s]quick -->
+                <div class="quick" id="floating">
+                    <h3>Quick 메뉴<a href="#">바로가기</a></h3>
+                    <ul>
+                        <li><a href="#">요금조회</a></li>
+                        <li><a href="#">요금계산</a></li>
+                        <li><a href="#">이사요금계산</a></li>
+                        <li><a href="#">자가검침입력</a></li>
+                        <li><a href="#">사업소전화번호</a></li>
+                    </ul>
+                    <a href="#" class="top">위로가기</a>
+                </div>
+				<!-- //[e]quick -->
+
+			</div>
+		</div>
+		<!-- //[e]CONTENTS -->
+
+
+		<!-- [s]footer -->
+        <div class="footer">
+			<div>
+                <div class="add">
+                    <img src="../images/common/f_logo.png" alt="Arisu 아리수 사이버고객센터" />
+                    <div class="list">
+                        <ul>
+                            <li><a href="#">상수도사업본부안내</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">이메일무단수집거부</a></li>
+                            <li><a href="#">이용약관</a></li>
+                        </ul>
+                        <address>서울시 서대문구 서소문로 51(합동 27-1) (우)03741 / 전화 (02) 120번</address>
+                        <div class="copyright">
+                            Copyright© 2018 서울특별시 상수도사업본부 all right reserved
+                        </div>
+                    </div>
+                </div>
+                <div class="top-g">
+                    <img src="../images/common/iseoulu_logo.png" alt="I SEOUL U 너와 나의 서울" />
+                    <a href="#" class="top">TOP</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-bg"></div>
+        <div class="mobile-menu">
+            <button type="button" class="m-close"></button>
+            <div class="link-g">
+                <ul>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+             </div>
+            <ul>
+                <li>
+					<a href="#">요금조회</a>
+                    <ul>
+                        <li><a href="#">요금조회서브</a></li>
+                        <li><a href="#">요금조회서브</a></li>
+                        <li><a href="#">요금조회서브</a></li>
+                    </ul>
+                </li>
+                <li>
+					<a href="#">민원신청</a>
+                    <ul>
+                        <li><a href="#">요금조회서브</a></li>
+                        <li><a href="#">요금조회서브</a></li>
+                        <li><a href="#">요금조회서브</a></li>
+                    </ul>
+                </li>
+                <li>
+					<a href="#">이사정산</a>
+                    <ul>
+                        <li><a href="#">요금조회서브</a></li>
+                        <li><a href="#">요금조회서브</a></li>
+                        <li><a href="#">요금조회서브</a></li>
+                    </ul>
+                </li>
+                <li>
+					<a href="#">자가검침</a>
+                    <ul>
+                        <li><a href="#">요금조회서브</a></li>
+                        <li><a href="#">요금조회서브</a></li>
+                        <li><a href="#">요금조회서브</a></li>
+                    </ul>
+                </li>
+                <li>
+					<a href="#">알림마당</a>
+                    <ul>
+                        <li><a href="#">요금조회서브</a></li>
+                        <li><a href="#">요금조회서브</a></li>
+                        <li><a href="#">요금조회서브</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+		<!-- //[e]footer -->
+
+    </div>
+	<!-- //[e]wrap -->
+
+
+<!-- [D]layout.html layer 부분 추가 -->
+<!-- [s]layer -->
+<!-- layer width: 1000 -->
+<div class="ly_pop" style="display:none;">
+	<div class="blind"><h1>사이버고객센터 팝업</h1></div>
+	
+	<!-- [s]ly_cont -->
+	<div class="ly_cont">
+
+		<div class="img_area1 img_area1_mt0">
+			<img src="../images/gojiseo5.jpg" alt="상&middot;하수도 요금 고지서" />
+		</div>
+
+	</div>
+	<!-- //[e]ly_cont -->
+
+</div>
+<!-- //[e]layer -->
+
+<div class="dimmed" style="display:none;"></div>
+<!-- //[D]layout.html layer 부분 추가 -->
+
+
+	<!-- [D]quickmenu 값 -->
+	<script type="text/javascript">initMoving(document.getElementById("floating"),26, 40,100)</script>
+
+</body>
+</html>

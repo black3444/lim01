@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+<script src="../js/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/seoul-common-gnb.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../css/board.css" />
+
+<!-- [D]서브관련 css 추가 -->
+<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+
+<script type="text/javascript" src="../js/jquery-1.12.4.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script type="text/javascript" src="../js/jquery.cycle2.js"></script>
+<script src="../js/gnb.js"></script>
+<script src="../js/design.js"></script>
+
+<!-- [D]서브관련 js 추가 -->
+<script type="text/javascript" src="../js/sub.js"></script>
+
+<title>전자고지(이메일) 신청 (신규/변경/해지) : 사이버고객센터</title>
+</head>
+<body>
+
+					<!-- [s]content_inner -->
+					<div class="content_inner">
+						
+						<!-- [s]stitle1 -->
+						<div class="stitle1">
+							<h3 class="tit">전자고지(이메일) 신청 (신규/변경/해지)</h3>
+						</div>
+						<!-- //[e]stitle1 -->
+
+
+						<!-- [D]선택시 : step_item1 클래스에 is_select 추가 -->
+						<ol class="step_area1">
+							<li class="step_item1 is_select">
+								<div class="step_sec1">
+									신청
+								</div>
+							</li>
+							<li class="step_item1">
+								<div class="step_sec1">
+									민원접수
+								</div>
+							</li>
+							<li class="step_item1">
+								<div class="step_sec1">
+									해당과 처리
+								</div>
+							</li>
+							<li class="step_item1">
+								<div class="step_sec1">
+									조치완료
+								</div>
+							</li>
+						</ol>
+						
+						<div class="area_space1"></div>
+
+
+						<ul class="tab_area1">
+							<li class="tab_item1"><a href="#" class="tab_link1">민원신청</a></li>
+							<li class="tab_item1"><a href="#" class="tab_link1">민원안내&middot;처리절차</a></li>
+						</ul>
+
+
+						<!-- [s]tab_area1_cont -->
+						 <div class="tab_area1_cont tab1_cont1">
+						 
+							<!-- [s]stitle2 -->
+							<div class="stitle2">
+								<h4 class="tit">수용가정보</h4>
+								<span class="value_txt_dsc"><em class="point_red">*</em> 는 필수입력사항입니다.</span>
+							</div>
+							<!-- //[e]stitle2 -->
+
+							<div class="tbl_line_sec1">
+								<table class="tbl_write1" summary="고객번호,수용가명,사용자명,기본주소,상세주소,도로명주소,고지형태">
+								<caption><span class="blind">수용가정보 내역</span></caption>
+									<colgroup>
+										<col style="width:80px" />
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">고객번호</label> <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<!-- [D]inp_txt가 disabled 경우 : inp_txt 클래스에 is_disabled  추가 및 input에 disabled="disabled"  추가 -->
+												<span class="inp_txt  is_disabled">
+													<input type="text" name="" id="" class="inp" value="" disabled="disabled"  />
+												</span>
+												<div class="inp_field_block">
+													<span class="txt_word1">고객번호는 요금 청구서에서 확인하실 수 있으며(<a href="#" title="새창으로 이동" class="point_red">위치보기</a>), 홈페이지에 회원가입하여 등록하신 경우 마이페이지에서 볼 수 있습니다.</span>
+												</div>											
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">수용가명</label> <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid6">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>
+												<button type="button" class="btn_inline_sm1" disabled="disabled">검색</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">사용자명</label> <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid6">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>
+											</td>
+										</tr>
+
+										<tr>
+											<th scope="row"><label for="">기본주소</label></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid6">
+													<input type="text" name="" id="" class="inp" value="" title="우편번호" />
+												</span>
+												<div class="inp_field_block">
+													<span class="inp_txt">
+														<input type="text" name="" id="" class="inp" value="" title="검색된주소" />
+													</span>												
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">상세주소</label></th>
+											<td class="cell_last">
+												<span class="inp_txt">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>										
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">도로명주소</label></th>
+											<td class="cell_last">
+												<span class="inp_txt">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>										
+											</td>
+										</tr>
+
+										<tr>
+											<th scope="row"><label for="">고지형태</label></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid6">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>							
+							</div>
+
+
+							<!-- [s]stitle2 -->
+							<div class="stitle2">
+								<h4 class="tit">전자고지사용현황</h4>
+							</div>
+							<!-- //[e]stitle2 -->
+							
+							<div class="tbl_line_sec1">
+								<table class="tbl_write1" summary="사용여부,등록된이메일">
+								<caption><span class="blind">전자고지사용현황 내역</span></caption>
+									<colgroup>
+										<col style="width:80px" />
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">사용여부</th>
+											<td class="cell_last"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">등록된이메일</label></th>
+											<td class="cell_last">
+												<span class="inp_txt">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>											
+											</td>
+										</tr>
+									</tbody>
+								</table>							
+							</div>
+
+
+							<!-- [s]stitle2 -->
+							<div class="stitle2">
+								<h4 class="tit">수신자</h4>
+							</div>
+							<!-- //[e]stitle2 -->
+
+							<div class="tbl_line_sec1">
+								<table class="tbl_write1" summary="성명,생년월일">
+								<caption><span class="blind">수신자 내역</span></caption>
+									<colgroup>
+										<col style="width:80px" />
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">성명</label>  <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid6">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>
+												<button type="button" class="btn_inline_sm1">휴대폰인증</button>
+												<button type="button" class="btn_inline_sm1">공공아이핀</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">생년월일</label>  <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<select name="" id="" class="select_box"  title="개인/법인/외국인 선택" style="width:80px;">
+													<option value="" selected="selected">전체</option>
+												</select>
+												<!-- [D]txt_lbl : 텍스트 클릭시 인풋 focus처리 필요 및 텍스트 있을 시 txt_lbl부분 hide처리 필요, 텍스트 없을 시 다시 txt_lbl부분 텍스트 show처리 필요 -->
+												<span class="inp_txt inp_txt_wid8 inp_txt_mr1">
+													<span class="txt_lbl">생년월일8자리</span>
+													<input type="text" name="" id="" class="inp" value="" title="생년월일8자리" />
+												</span>
+												<span class="txt_word1">YY/MM/DD</span>
+												<div class="inp_field_block">
+													<span class="txt_word1">입력하신 생년월일은 이메일 수신 시 암호로 사용합니다.</span>
+												</div>
+											</td>
+										</tr>					
+									</tbody>
+								</table>							
+							</div>
+
+
+							<!-- [s]stitle2 -->
+							<div class="stitle2">
+								<h4 class="tit">전자고지(이메일)신청/변경</h4>
+							</div>
+							<!-- //[e]stitle2 -->
+
+							<div class="tbl_line_sec1">
+								<table class="tbl_write1" summary="전자고지(이메일)신청/변경">
+								<caption><span class="blind">전자고지(이메일)신청/변경 내역</span></caption>
+									<colgroup>
+										<col style="width:80px" />
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">전자고지<br />(이메일)<br />신청/변경</label>  <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+
+												<!-- [s]inp_field_bx : 내려쓰기 박스 -->
+												<div class="inp_field_bx">
+
+													<div class="inp_field_block">
+														<span class="checkbox checkbox_mr1">
+															<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+															<label for="">신규신청</label>
+														</span>
+														<span class="inp_txt inp_txt_wid5">
+															<input type="text" name="" id="" class="inp" value="" title="이메일주소"  />
+														</span>
+														<span class="txt_word1">＠</span>
+														<span class="inp_txt inp_txt_wid5">
+															<input type="text" name="" id="" class="inp" value="" title="도메인주소"  />
+														</span>
+														<select name="" id="" class="select_box" title="이메일도메인란 선택" style="width:170px;">
+															<option value="" selected="selected">전체</option>
+														</select>	
+													</div>
+							
+													<div class="inp_field_block">
+														<span class="checkbox checkbox_mr1">
+															<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+															<label for="">변경신청</label>
+														</span>
+														<span class="inp_txt inp_txt_wid5">
+															<input type="text" name="" id="" class="inp" value="" title="이메일주소"  />
+														</span>
+														<span class="txt_word1">＠</span>
+														<span class="inp_txt inp_txt_wid5">
+															<input type="text" name="" id="" class="inp" value="" title="도메인주소"  />
+														</span>
+														<select name="" id="" class="select_box" title="이메일도메인란 선택" style="width:170px;">
+															<option value="" selected="selected">전체</option>
+														</select>	
+													</div>
+
+													<div class="inp_field_block">
+														<span class="checkbox checkbox_mr1">
+															<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+															<label for="">해지신청</label>
+														</span>
+														<span class="inp_txt inp_txt_wid5">
+															<input type="text" name="" id="" class="inp" value="" title="이메일주소"  />
+														</span>
+														<span class="txt_word1">＠</span>
+														<span class="inp_txt inp_txt_wid5">
+															<input type="text" name="" id="" class="inp" value="" title="도메인주소"  />
+														</span>
+														<select name="" id="" class="select_box" title="이메일도메인란 선택" style="width:170px;">
+															<option value="" selected="selected">전체</option>
+														</select>	
+													</div>
+
+													<div class="inp_field_block">
+														<span class="checkbox checkbox_mr1">
+															<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+															<label for="">종이 고지서 발행(E-Mail 청구서 + 종이 고지서 발송) 희망시 체크</label>
+														</span>
+													</div>
+
+												</div>
+												<!-- //[e]inp_field_bx : 내려쓰기 박스 -->
+
+											</td>
+										</tr>
+									</tbody>
+								</table>							
+							</div>
+
+							<!-- [s]stitle2 -->
+							<div class="stitle2">
+								<h4 class="tit">확인사항</h4>
+							</div>
+							<!-- //[e]stitle2 -->	
+
+
+							<div class="gray_line_area1 gray_line_type1">
+								<div class="agree_tit">[필수 안내사항]</div>
+								
+								<ul class="notice_lst4">
+									<li class="notice_item4">
+										<span class="notice_lst4_num">1.</span>
+										<span class="notice_lst4_txt">종이 고지서 발행을 선택하는 경우에는 요금감면(상수도 요금의 1% 최소200~1,000원)은 없습니다.</span>
+									</li>
+									<li class="notice_item4">
+										<span class="notice_lst4_num">2.</span>
+										<span class="notice_lst4_txt">당월 8일까지 신청(변경)한 사항은 당월에 반영되며 8일이후에 신청(변경)한 사항은 다음납기에 반영됩니다.</span>
+									</li>
+									<li class="notice_item4">
+										<span class="notice_lst4_num">3.</span>
+										<span class="notice_lst4_txt">이사정산을 하는 경우 전입자가 고지서를 받을 수 있도록 종이고지서를 발행하는 전자고지로 직권변경 될 수 있습니다.</span>
+									</li>
+								</ul>
+								
+								<div class="all_agree_sec">
+									<!-- [D]선택시 : is_checked 클래스 추가 -->
+									<span class="checkbox checkbox_rig is_checked">								
+										<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+										<label for="">확인사항: 전자고지 약관을 확인하였습니다.</label>
+										<button type="button" class="btn_inline_sm2">전자고지 이용약관 보기</button>
+									</span>
+								</div>
+							</div>
+
+							<!-- [s]stitle2 -->
+							<div class="stitle2">
+								<h4 class="tit">신청인</h4>
+							</div>
+							<!-- //[e]stitle2 -->
+							
+							<div class="tbl_line_sec1">
+								<table class="tbl_write1" summary="성명,생년월일,기본주소,상세주소,도로명주소,전화번호,휴대폰번호,관계">
+								<caption><span class="blind">신청인 내역</span></caption>
+									<colgroup>
+										<col style="width:80px" />
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">성명</label>  <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid6">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>
+												<button type="button" class="btn_inline_sm1">사용자명과 같게</button>
+												<button type="button" class="btn_inline_sm1">수신자와과같게</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">생년월일</label>  <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<select name="" id="" class="select_box"  title="개인/법인/외국인 선택" style="width:80px;">
+													<option value="" selected="selected">전체</option>
+												</select>
+												<!-- [D]txt_lbl : 텍스트 클릭시 인풋 focus처리 필요 및 텍스트 있을 시 txt_lbl부분 hide처리 필요, 텍스트 없을 시 다시 txt_lbl부분 텍스트 show처리 필요 -->
+												<span class="inp_txt inp_txt_wid8 inp_txt_mr1">
+													<span class="txt_lbl">생년월일8자리</span>
+													<input type="text" name="" id="" class="inp" value="" title="생년월일8자리" />
+												</span>
+												<span class="txt_word1">YY/MM/DD</span>
+											</td>
+										</tr>		
+										<tr>
+											<th scope="row"><label for="">기본주소</label>  <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid6">
+													<input type="text" name="" id="" class="inp" value="" title="우편번호" />
+												</span>
+												<button type="button" class="btn_inline_sm1">검색</button>
+												<button type="button" class="btn_inline_sm1">수용가정보와 같게</button>
+												<div class="inp_field_block">
+													<span class="inp_txt">
+														<input type="text" name="" id="" class="inp" value="" title="검색된주소" />
+													</span>												
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">상세주소</label>  <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												
+												<!-- [s]inp_field_bx : 내려쓰기 박스 -->
+												<div class="inp_field_bx">
+													<div class="inp_field_block">
+														<!-- [D]선택시 : is_checked 클래스 추가 -->
+														<span class="checkbox checkbox_mr1 checkbox_rig is_checked">
+															<label for="">산</label>
+															<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+														</span>
+
+														<span class="txt_word1">본번</span>
+														<span class="inp_txt inp_txt_wid3 inp_txt_mr1">
+															<input type="text" name="" id="" class="inp" value="" title="본번" />
+														</span>	
+
+														<span class="txt_word1">부번</span>
+														<span class="inp_txt inp_txt_wid3">
+															<input type="text" name="" id="" class="inp" value="" title="부번" />
+														</span>	
+													</div>
+
+													<div class="inp_field_block">
+														<span class="txt_word1">특수주소(건물,아파트명)</span>
+														<span class="inp_txt">
+															<input type="text" name="" id="" class="inp" value="" title="특수주소(건물,아파트명)" />
+														</span>	
+													</div>
+
+													<div class="inp_field_block">
+														<span class="txt_word1">동</span>
+														<span class="inp_txt inp_txt_wid3 inp_txt_mr1">
+															<input type="text" name="" id="" class="inp" value="" title="동" />
+														</span>
+
+														<span class="txt_word1">호</span>
+														<span class="inp_txt inp_txt_wid3 inp_txt_mr1">
+															<input type="text" name="" id="" class="inp" value="" title="호" />
+														</span>
+
+														<span class="checkbox checkbox_mr1 checkbox_rig">
+															<label for="">지하</label>
+															<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+														</span>
+														<span class="txt_word1">층번호</span>
+														<span class="inp_txt inp_txt_wid3">
+															<input type="text" name="" id="" class="inp" value="" title="층번호" />
+														</span>
+													</div>
+
+													<div class="inp_field_block inp_field_block_mt0">
+														<span class="txt_word1">기타주소</span>
+														<span class="inp_txt">
+															<input type="text" name="" id="" class="inp" value="" title="기타주소" />
+														</span>	
+													</div>
+												</div>
+												<!-- //[e]inp_field_bx : 내려쓰기 박스 -->
+
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">도로명주소</label></th>
+											<td class="cell_last">
+												<span class="inp_txt">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>										
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">전화번호</label></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="지역번호"  />
+												</span>
+												<span class="txt_bar1">-</span>
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="전화번호 중간번호"  />
+												</span>
+												<span class="txt_bar1">-</span>
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="전화번호 끝번호"  />
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">휴대폰번호</label>  <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="휴대폰식별번호"  />
+												</span>
+												<span class="txt_bar1">-</span>
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="휴대폰번호 중간번호"  />
+												</span>
+												<span class="txt_bar1">-</span>
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="휴대폰번호 끝번호"  />
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">관계</label>  <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid4">
+													<input type="text" name="" id="" class="inp" value="" title="구분인" />
+												</span>	
+												<span class="txt_word1">의</span>
+												<span class="inp_txt inp_txt_wid4">
+													<input type="text" name="" id="" class="inp" value="" title="가족관계" />
+												</span>	
+											</td>
+										</tr>
+									</tbody>
+								</table>							
+							</div>
+
+							<ul class="notice_lst1">
+								<li class="notice_item1">
+									<!-- [D]선택시 : is_checked 클래스 추가 -->
+									<span class="checkbox checkbox_rig is_checked">								
+										<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+										<label for="">사용자와 신청인이 동일하지 않을 경우 사용자로부터 전자고지(이메일) 신청 등의 동의를 받았음을 확인합니다.</label>
+									</span>
+								</li>
+								<li class="notice_item1">수용가 정보에 나온 사용자와 실제 수도사용자가 다른 경우에는 실제 사용자로 명의변경 신청을 하여주시기 바랍니다.</li>
+							</ul>
+
+							<!-- [s]btn_area -->
+							<div class="btn_area align_cn">
+								<div class="btn_area_cont">
+									<button type="button" class="btn_inline btn_submit">등록</button>	
+									<button type="button" class="btn_inline">취소</button>
+									<button type="button" class="btn_inline">내용 지우기</button>
+								</div>
+							</div>
+							<!-- //[e]btn_area -->
+
+						 </div>
+
+						<!-- [s]tab_area1_cont -->
+						 <div class="tab_area1_cont tab1_cont2">
+							
+							<!-- [s]stitle1 -->
+							<div class="stitle1 stitle1_mt1">
+								<h3 class="tit">전자고지(이메일) 신청 (신규/변경/해지)</h3>
+							</div>
+							<!-- //[e]stitle1 -->
+
+							<ul class="notice_lst1">
+								<li class="notice_item1">상하수도요금 청구서에 대한 안내를 전자고지(이메일)로 받아보실 수 있는 서비스입니다.</li>
+							</ul>
+
+							<!-- [s]stitle1 -->
+							<div class="stitle1 stitle1_mt1">
+								<h3 class="tit">가입혜택 및 유의사항</h3>
+							</div>
+							<!-- //[e]stitle1 -->
+
+							<ul class="notice_lst1">
+								<li class="notice_item1">전자고지(이메일청구서)를 신청하시면 상수도요금의 1% 감면됩니다. (최소 200원 ~ 최대 1,000원)</li>
+								<li class="notice_item1">단, 종이고지서 발행을 신청하신 경우에는 감면하지 않습니다.</li>
+								<li class="notice_item1">전자고지 신청(변경)사항은 당월 8일까지 신청(변경)한 것에 대하여 당월에 반영되며, 그 이후에 신청(변경)한 사항은 다음 납기에 적용됩니다.</li>
+							</ul>
+
+							<!-- [s]stitle1 -->
+							<div class="stitle1 stitle1_mt1">
+								<h3 class="tit">감면액 산정예시 (하수요금, 물이용부담금은 미감면 / 2010년 6월 납기분부터)</h3>
+							</div>
+							<!-- //[e]stitle1 -->
+
+
+							<div class="tbl_line_sec1">
+								<table class="tbl_board1" summary="부과금액,부과상세,감면액">
+									<caption><span class="blind">감면액 산정예시 (하수요금, 물이용부담금은 미감면 / 2010년 6월 납기분부터) 내역</span></caption>
+									<colgroup>
+										<col style="width:33%" />
+										<col style="width:34%" />
+										<col style="width:33%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">부과금액</th>
+											<th scope="col">부과상세</th>
+											<th scope="col" class="cell_last">감면액</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="cell_left">2010년 6월납기 부과금액 12,360원</td>
+											<td class="cell_left">상수5,960, 하수3,200, 물부담금3,200</td>
+											<td class="cell_last cell_left">상수도 200원</td>
+										</tr>
+										<tr>
+											<td class="cell_left">2010년 6월납기 부과금액 83,760원</td>
+											<td class="cell_left">상수42,960, 하수24,800, 물부담금16,000</td>
+											<td class="cell_last cell_left">상수도 420원</td>
+										</tr>
+										<tr>
+											<td class="cell_left">2010년 6월납기 부과금액 236,760원</td>
+											<td class="cell_left">상수121,960, 하수82,800, 물부담금32,000</td>
+											<td class="cell_last cell_left">상수도 1,000원</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+
+							<!-- [s]stitle1 -->
+							<div class="stitle1 stitle1_mt1">
+								<h3 class="tit">신청방법</h3>
+							</div>
+							<!-- //[e]stitle1 -->
+
+							<ul class="notice_lst1">
+								<li class="notice_item1"><strong>전화신청 :</strong> 120 다산콜센터(국번없이 120), 수도사업소 (본인과의 통화내용 녹취로 본인 인증 후 신청)</li>
+								<li class="notice_item1">
+									<strong>인터넷신청 :</strong> 상수도홈페이지 사이버고객센터 온라인민원신청<br />
+									(사업자는 공인인증서, 개인은 휴대폰인증 또는 공공아이핀 인증 후 신청)
+								</li>
+							</ul>
+
+							<!-- [s]stitle1 -->
+							<div class="stitle1 stitle1_mt1">
+								<h3 class="tit">전자고지(이메일) 신청 (신규/변경/해지) 민원안내</h3>
+							</div>
+							<!-- //[e]stitle1 -->
+
+							<div class="tbl_line_sec1">
+								<table class="tbl_write1" summary="처리기간,처리부서,신청서류,관련법규">
+								<caption><span class="blind">전자고지(이메일) 신청 (신규/변경/해지) 민원안내 내역</span></caption>
+									<colgroup>
+										<col style="width:80px" />
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">처리기간</th>
+											<td class="cell_last">즉시</td>
+										</tr>
+										<tr>
+											<th scope="row">처리부서</th>
+											<td class="cell_last">행정지원과</td>
+										</tr>
+										<tr>
+											<th scope="row">신청서류</th>
+											<td class="cell_last">전자고지(이메일) 신청 (신규/변경/해지) 신청서</td>
+										</tr>
+										<tr>
+											<th scope="row">관련법규</th>
+											<td class="cell_last">
+												<ul class="notice_lst1 notice_lst1_mt0">
+													<li class="notice_item1">서울특별시수도조례 제32조</li>
+													<li class="notice_item1">서울특별시수도조례시행규칙 제29조</li>
+												</ul>														
+											</td>
+										</tr>
+									</tbody>
+								</table>							
+							</div>
+
+							<!-- [s]btn_area -->
+							<div class="btn_area align_cn">
+								<div class="btn_area_cont">
+									<button type="button" class="btn_inline btn_submit">온라인 민원신청</button>
+									<button type="button" class="btn_inline">민원처리 결과확인</button>
+								</div>
+							</div>
+							<!-- //[e]btn_area -->
+
+						 </div>
+
+
+					</div>
+					<!-- //[e]content_inner -->
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>고객지원시스템 마크업 산출물</title>
+<!--[if lt IE 9]>
+<script type="text/javascript">
+document.createElement("section");
+document.createElement("nav");
+document.createElement("article");
+document.createElement("aside");
+document.createElement("hgroup");
+document.createElement("header");
+document.createElement("footer");
+</script>
+<![endif]-->
+<style type="text/css">
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-size:14px;font-family:'나눔고딕',NanumGothic,'맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica;line-height:1.25em}
+body.s,.s input,.s textarea,.s select,.s button,.s table{font-family:Helvetica}
+body{position:relative;background-color:#f4f4f4;color:#000;-webkit-text-size-adjust:none}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{color:#000;text-decoration:none}
+table{border-collapse:collapse}
+hr{display:none !important}
+.u_hc{visibility:hidden;overflow:hidden;position:absolute;left:-999em;width:0;height:0;font-size:0;line-height:0}
+.u_vc,.u_skip{position:absolute;*left:-9999em;z-index:-1;font-size:4px;line-height:1px;color:transparent}
+#ct{clear:both;width:100%;background-color:#fff}
+#ct:after{display:block;clear:both;height:1px;margin-top:-1px;content:''}
+
+/* index.html */
+body{padding:10px 14px;background-color:#fff;word-wrap:break-word;word-break:break-all}
+header{padding:1em 4em .9em .1em;border-bottom:3px solid #222}
+header:after{display:block;clear:both;content:''}
+.hd_h1{float:left;font-size:1.2em}
+.hd_svc{display:block;position:absolute;top:0;right:4px;width:3em;padding:.8em 24px .7em .6em;background:url(http://static.naver.com/www/m/cm/im/bu_lk.gif) no-repeat 100% 50%;font-size:.86em;line-height:1.1em;color:#666}
+.hd_wr{white-space:nowrap}
+.sec_h{clear:both;padding:2em .1em .4em;border-bottom:1px solid #000;font-size:1em}
+.sec_h2{clear:both;padding:1em .1em .4em;border-bottom:1px dotted #888;font-size:1em}
+.sec_h2::before{display:inline-block;margin-right:.25em;border:2px solid transparent;border-left-color:#000;vertical-align:3px;content:''}
+li{border-bottom:1px solid #dfdfdf}
+li a{display:block;padding:6px 31px 5px 13px;font-size:12px;background:url(http://static.naver.com/www/m/cm/im/bu_lk.gif) no-repeat 100% 50%;_zoom:1}
+li a:hover{background-color:#d8e5eb;}
+li span{margin-left:.4em;font-size:11px;color:#909090}
+li a:hover .file{color:#000}
+li ul{border-top:1px solid #dfdfdf}
+li ul li{padding-left:15px}
+li ul li:last-child{border-bottom:0}
+li.ing{background:#ddd}
+li.ing a{font-weight:bold;color:#1a4dac}
+li.fin a{font-weight:bold;color:#f85642}
+li.not a{background:#e5e5e5;color:#999;cursor:default;pointer-events:none}
+.tit{display:block;padding:.7em 31px .6em .1em;font-weight:bold;background:none}
+.tit:before{padding-right:6px;content:'|';color:red;font-weight:bold}
+footer{clear:both;margin:2.5em 0 4em;padding:6px 2px 2px;background:#f4f4f4;font-size:.86em;line-height:1.6em;color:#333;text-align:center}
+dt,dd{display:inline;color:#333}
+dt:after{display:inline;content:': '}
+dd:last-of-type{display:block;color:#aaa}
+.ft_a{display:inline-block;padding:2px 2px 5px;color:#16d;letter-spacing:-1px;text-decoration:underline}
+.proj_info{cursor:pointer}
+.quick{float:left;margin:0 0 0 15px;font-weight:bold;background:#fd3939}
+.quick a{color:#fff}
+[class^="tag"]{display:inline-block;margin-right:7px;padding:0 4px;border:1px solid #f66;border-radius:3px;background:#fff;font-size:11px;color:#f66;font-style:normal}
+em.tag2{border:1px solid #09f;color:#09f}
+em.tag3{border:1px solid #39b54a;color:#39b54a}
+.new{display:inline-block;position:relative;top:-1px;padding:1px 3px 2px;border-radius:3px;background:#fd3939;font-size:10px;vertical-align:middle;color:#fff;line-height:12px;}
+.up{display:inline-block;position:relative;top:-1px;padding:1px 3px 2px;border-radius:3px;background:#45a7fb;font-size:10px;vertical-align:middle;color:#fff;line-height:12px;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(function(){
+	$('#ct a').each(function(){
+		$('<span class="file">/ '+$(this).attr('href')+'</span>').appendTo($(this));
+	});
+	$('.proj_info').click(function(){
+		$('.lst_proj_info').toggle();
+	});
+	$('li.not a').click(function(){return false});
+});
+</script>
+</head>
+
+<body>
+
+<div role="banner">
+	<h1 class="hd_h1">고객지원시스템</h1>
+</div>
+<div id="ct">
+
+	<h2 class="sec_h">etc</h2>
+	<ul>
+		<!-- <li><a href="00_guide.html">guide</a></li> -->
+		<li><a href="00_error_service.html.html">에러 페이지</a></li>
+	</ul>
+
+	<h2 class="sec_h">메인</h2>
+	<ul>
+		<li><a href="00_main.html">메인</a></li>
+	</ul>
+
+	<h2 class="sec_h">서브</h2>
+	<ul>
+		<li><a href="total_complaint_list.html">전체 민원</a></li>
+		<li><a href="complaint_list1.html">민원접수 리스트 (상단 텍스트 없는 경우)</a></li>
+		<li><a href="complaint_list2.html">민원접수 리스트 (상단 텍스트 있는 경우)</a></li>
+		<li><a href="complaint_write1.html">민원신청 등록1</a></li>
+		<li><a href="complaint_write2.html">민원신청 등록2</a></li>
+		<li><a href="complaint_view.html">민원처리 상세</a></li>
+		<li><a href="complaint_search.html">민원처리 검색</a></li>
+		<li><a href="general_search.html">총괄현황 검색</a> </li>
+		<li><a href="sms_search.html">SMS 발송 대장 검색</a> </li>
+		<li><a href="stats_search1.html">통계정보(민원유형별)</a></li> 
+		<li><a href="stats_search2.html">통계정보(사업소별)</a></li> 
+		<li><a href="stats_search3.html">통계정보(시간대별)</a></li> 
+		<li><a href="notice_list.html">공지사항 리스트</a></li> 
+		<li><a href="notice_write.html">공지사항 등록</a></li> 
+		<li><a href="notice_view.html">공지사항 상세</a></li> 
+
+		<li><a href="faq_list.html">FAQ 리스트</a></li>
+		<li><a href="faq_write.html">FAQ 등록</a></li>
+
+		<li><a href="improve_list.html">개선요청 게시판</a></li>
+		<li><a href="improve_write.html">개선요청 게시판 등록</a></li>
+		<li><a href="improve_view.html">개선요청 게시판 상세</a></li>
+
+		<li><a href="absence_admin_search.html">부재설정 및 대직자 지정 관리</a></li>
+		<li><a href="basic_code_list.html">기초코드관리</a></li>
+
+		<li><a href="help_waterworks.html">급수공사신청</a></li>
+		<li><a href="water_meter_change.html">수도계량기교체</a></li>
+
+		<li><a href="b13_form.html">담당자접수민원(신구 소유자(사용자) 사용요금분리신고)</a></li>
+		<li><a href="a13_sin02.html">담당자접수민원(옥내급수관 공사비지원신청)</a></li>
+		<li><a href="a14_sin02.html">담당자접수민원(옥내급수관 공사비지급요청)</a></li>
+
+		<li><a href="b14_sin01.html">담당자접수민원(자동납부 신청 (신규/해지))</a></li>
+
+		<li><a href="b20_form.html">담당자접수민원(상하수도요금 이의신청)</a></li>
+		<li><a href="b18_sin01.html">담당자접수민원(수도요금청구지주소변경)</a></li>
+		<li><a href="b10_sin01.html">담당자접수민원(과오납금반환청구)</a></li>
+		<li><a href="minwon_book1.html">민원처리대장1</a></li>
+		<li><a href="minwon_book2.html">민원처리대장2 <span class="new">new</span></a></li>
+
+
+	</ul>
+
+
+	<h2 class="sec_h">팝업 (팝업 <em style="color:red;">width</em> 사이즈 3가지 임) ★★★★★  500 : <em style="color:red;">ly_pop ly_pop_wid1</em> / 800 :  <em style="color:red;">ly_pop ly_pop_wid2</em> / 1000 : <em style="color:red;">ly_pop</em> 으로 사용) ★★★★★</h2>
+	<ul>
+		<li><a href="99_pop_write1.html">팝업 등록1 (width:1000px)</a></li>
+		<li><a href="99_pop_write2.html">팝업 등록2 (width:1000px)</a></li>
+
+		<li><a href="99_pop_veiw1.html">팝업 상세 (width:1000px)</a></li>
+		<li><a href="99_pop_veiw2.html">팝업 상세 (width:1000px)</a></li>
+
+		<li><a href="pop_place_inquiry_view1.html">[팝업]결급수 현장조사 지시서 (width:800px / <strong>출력</strong>)</a></li>
+		<li><a href="pop_sms_send.html">[팝업]SMS 재발송 (width:500px / 작은팝업)</a></li>
+		<li><a href="pop_cpt_process_view1.html">[팝업]민원처리내역확인 (width:1000px)</a></li>
+		<li><a href="pop_absence_search.html">[팝업]부재설정 (width:500px)</a></li>
+		<li><a href="pop_basic_code_write.html">[팝업]코드그룹 등록 (width:500px)</a></li>
+		<li><a href="pop_basic_code_modify.html">[팝업]코드그룹 수정 (width:500px)</a></li>
+
+		<li><a href="pop_b13_prc03.html">[팝업]현장조사 결과 (width:1000px)</a></li>
+		<li><a href="pop_com_sms01.html">[팝업]SMS통보1 (width:500px)</a></li>
+		<li><a href="pop_com_sms02.html">[팝업]SMS통보2 (width:800px)</a></li>
+		<li><a href="pop_b13_prc02.html">[팝업]신구 소유자(사용자)사용요금분리신고 현장조사 지시서 (width:800px/ <strong>출력</strong>)</a></li>
+		<li><a href="pop_b13_prc05.html">[팝업]기안결재 (width:800px)</a></li>
+
+		<li><a href="pop_b07_prc02.html">[팝업]관련 공부 확인 (width:800px)</a></li>
+		<li><a href="pop_b07_prc06.html">[팝업]현장조사 결과 입력 (width:1000px) </a></li>
+		<li><a href="pop_b11_prc03.html">[팝업]사설소화전 연습/사용결과 입회 복명서 결과입력 (width:800px)</a></li>
+		<li><a href="pop_b11_prc04.html">[팝업]기안문 (width:800px)</a></li>
+		<li><a href="pop_person_find.html">[팝업]담당자 찾기 (width:400px)</a></li>
+		<li><a href="pop_a13_prc01.html">[팝업]공사비 지원 승인검토 (width:1000px)</a></li>
+
+		<li><a href="pop_a14_sin01.html">[팝업]담당자접수민원 (width:1000px)</a></li>
+		<li><a href="pop_b01_prc02.html">[팝업]상하수도누수요금적용신청 현장조사 지시서 (width:800px/ <strong>출력</strong>)</a></li>
+		<li><a href="pop_b01_prc04.html">[팝업]현장조사 내용입력 (width:1000px)</a></li>
+		<li><a href="pop_b01_prc15.html">[팝업]상하수도누수요금적용신청 입회결과 기안결재(누수요금 적용 불가) (width:800px)</a></li>
+
+		<li><a href="pop_b20_prc01.html">[팝업]상하수도요금 이의신청 중간회신 답변 입력 (width:800px)</a></li>
+		<li><a href="pop_b20_prc02.html">[팝업]상하수도이의신청 민원 기안문 (width:800px)</a></li>
+		<li><a href="pop_mail_send.html">[팝업]처리결과 메일발송 (width:800px)</a></li>
+		<li><a href="pop_mail_answer.html">[팝업]메일답변 (width:800px)</a></li>
+
+		<li><a href="pop_b05_prc02.html">[팝업]수전폐전신고 현장조사 지시서 (width:800px / <strong>출력</strong>)</a></li>
+		<li><a href="pop_b05_prc12.html">[팝업]폐전에 따른 수도계량기철거 (width:800px / <strong>출력</strong>)</a></li>
+		<li><a href="pop_a02_prc01.html">[팝업]계량기교체팀 현장조사 내역 (width:800px / <strong>출력</strong>)</a></li>
+		<li><a href="pop_a02_prc03.html">[팝업]현장조사결과입력/수도계량기 교체 신청1 (width:1000px)</a></li>
+		<li><a href="pop_a02_prc15.html">[팝업]현장조사결과입력/수도계량기 교체 신청2 (width:1000px)</a></li>
+		<li><a href="pop_a02_prc08.html">[팝업]현장조사결과입력/수도계량기 교체 신청3 (width:1000px)</a></li>
+		<li><a href="pop_b05_prc01.html">[팝업]현장조사내용입력 (width:1000px)</a></li>
+
+		<li><a href="pop_a03_prc05.html">[팝업]현장조사결과/수도계량기 및 상수도관 이설 신청 (width:1000px)</a></li>
+
+		<li><a href="pop_b05_prc13.html">[팝업]폐전에 따른 수도계량기 철거 (width:1000px)</a></li>
+		<li><a href="pop_a03_prc02.html">[팝업]수용가정보 (width:1000px)</a></li>
+		<li><a href="pop_a03_prc05_2.html">[팝업]봉인검색 (width:800px)</a></li>
+		<li><a href="printQltwtrChkPopup.html">[팝업]수질 현장조사 지시서(width:800px / <strong>출력</strong>)</a></li>
+
+
+		<li><a href="pop_01.html">[팝업]현장조사서 (width:1000px)</a></li>
+		<li><a href="pop_02.html">[팝업]현장조사결과 (width:800px / <strong>출력</strong>)</a></li>
+
+
+		<!-- 
+			<li><a href="pop_sms_send.html">SMS 재발송 (width:500px / 작은팝업) <span class="new">new</span></a></li> 
+			<li><a href="complaint_list2.html">민원접수 리스트 (상단 텍스트 있는 경우) <span class="up">update</span></a></li>
+		-->
+	</ul>
+
+
+	<h2 class="sec_h">인쇄용</h2>
+	<ul>
+		<li><a href="print_a02_prc31.html">[프린터용]통보문출력 (width:800px)</a></li>
+		<li><a href="print_b03_print04.html">[프린터용]수도요금 납부 증명서 (width:800px)</a></li>
+	</ul>
+
+
+</div>
+
+</body>
+</html>

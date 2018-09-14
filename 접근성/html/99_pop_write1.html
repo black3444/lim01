@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="all">
+<title>수용가검색화면 : 고객지원시스템</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/design.common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<!-- [s]layer -->
+<!-- layer width: 1000 -->
+<div class="ly_pop">
+	<div class="blind"><h1>고객지원시스템 팝업</h1></div>
+
+	<!-- [s]ly_cont -->
+	<div class="ly_cont">
+
+		<!-- [s]ly_stit1 -->
+		<div class="ly_stit1">
+			<h2 class="tit">수용가검색화면</h2>
+		</div>
+		<!-- //[e]ly_stit1 -->
+
+		<table class="tbl_write1" summary="고객번호,수용가주소(기본주소,상세주소)">
+		<caption><span class="blind">수용가검색화면 내역</span></caption>
+			<colgroup>
+				<col style="width:60px;" />
+				<col style="width:70px;" />
+				<col />
+				<col style="width:130px;" />			
+				<col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row" colspan="2"><label for="">고객번호</label></th>
+					<td>
+						<span class="inp_txt">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>					
+					</td>
+					<th scope="row"><label for="">수용가명</label></th>
+					<td>
+						<span class="inp_txt">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>					
+					</td>
+				</tr>
+				<tr>
+					<th scope="rowgroup" rowspan="2">수용가<br />주소</th>
+					<th scope="row"><label for="">기본주소</label></th>
+					<td colspan="3">
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" title="우편번호" />
+						</span>
+						<button type="button" class="btn_inline_sm1">주소검색</button>
+						<div class="inp_field_sec">
+							<span class="inp_txt">
+								<input type="text" name="" id="" class="inp" value="" title="검색된주소" />
+							</span>
+						</div>					
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">상세주소</label></th>
+					<td colspan="3">
+						<span class="inp_txt">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>				
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="ly_paragraph_area">
+			<span class="checkbox">
+				<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+				<label for="">법정동코드로 조회</label>
+			</span>
+		</div>
+
+		<table class="tbl_write1" summary="고객번호,수용가명(수용가번호),업종,수전소재지(도로명주소,상세주소,기타입력),전소유자,전사용자">
+		<caption><span class="blind">수용가정보 내역</span></caption>
+			<colgroup>
+				<col style="width:60px;" />
+				<col style="width:70px;" />
+				<col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row" colspan="2"><label for="">고객번호</label> <span class="ico_star"><em class="blind">필수</em></span></th>
+					<td>
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>
+						<button type="button" class="btn_inline_sm1">수용가 검색</button>
+						<button type="button" class="btn_inline_sm1">과거민원현황 조회</button>
+						<button type="button" class="btn_inline_sm1">체납확인</button>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" colspan="2"><label for="">수용가명<br />(수용가번호)</label> <span class="ico_star"><em class="blind">필수</em></span></th>
+					<td>
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" colspan="2"><label for="">업종</label></th>
+					<td>
+						<!-- [D]inp_txt가 disabled 경우 : inp_txt 클래스에 is_disabled  추가 및 input에 disabled="disabled"  추가 -->
+						<span class="inp_txt is_disabled" style="width:300px;">
+							<input type="text" name="" id="" class="inp" value="" disabled="disabled" />
+						</span>								
+					</td>
+				</tr>
+				<tr>
+					<th scope="rowgroup" rowspan="3">수전<br />소재지</th>
+					<th scope="row"><label for="">도로명주소</label></th>
+					<td>
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" title="우편번호" />
+						</span>
+						<button type="button" class="btn_inline_sm1">주소검색</button>
+						<div class="inp_field_sec">
+							<span class="inp_txt">
+								<input type="text" name="" id="" class="inp" value="" title="검색된주소" />
+							</span>
+							<div class="inp_field_sec">
+								<span class="txt_word1">지번 : 서울특별시 마포구 성산동 586-6 아비뇽빌라</span>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">상세주소</label></th>
+					<td>
+						<span class="txt_word1">동</span>
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="동" />
+						</span>	
+
+						<!-- [D]inp_txt가 disabled 경우 : inp_txt 클래스에 is_disabled  추가 및 input에 disabled="disabled"  추가 -->
+						<span class="txt_word1 txt_word1_ml1">호</span>
+						<span class="inp_txt is_disabled" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" disabled="disabled" title="호"  />
+						</span>										
+
+						<span class="checkbox checkbox_ml1">
+							<label for="">지하</label>
+							<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+						</span>
+						
+						<span class="txt_word1 txt_word1_ml1">층번호</span>
+						<!-- [D]inp_txt가 disabled 경우 : inp_txt 클래스에 is_disabled  추가 및 input에 disabled="disabled"  추가 -->
+						<span class="inp_txt is_disabled" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" disabled="disabled" title="층번호" />
+						</span>	
+						
+						<!-- [D]checkbox가 disabled 경우 : input에 disabled="disabled"  추가 -->
+						<span class="checkbox checkbox_ml1">
+							<label for="">산</label>
+							<span class="ico_check"><input type="checkbox" name="" id="" disabled="disabled" /></span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">기타입력</label></th>
+					<td>
+						<!-- [D]inp_txt가 disabled 경우 : inp_txt 클래스에 is_disabled  추가 및 input에 disabled="disabled"  추가 -->
+						<span class="inp_txt is_disabled">
+							<input type="text" name="" id="" class="inp" value="" disabled="disabled" />
+						</span>								
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" colspan="2"><label for="">전소유자</label></th>
+					<td>
+						<!-- [D]inp_txt가 disabled 경우 : inp_txt 클래스에 is_disabled  추가 및 input에 disabled="disabled"  추가 -->
+						<span class="inp_txt is_disabled" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" disabled="disabled" />
+						</span>					
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" colspan="2"><label for="">전사용자</label></th>
+					<td>
+						<!-- [D]inp_txt가 disabled 경우 : inp_txt 클래스에 is_disabled  추가 및 input에 disabled="disabled"  추가 -->
+						<span class="inp_txt is_disabled" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" disabled="disabled" />
+						</span>								
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- [s]btn_area -->
+		<div class="ly_btn_area align_cn">
+			<button type="button" class="btn_inline btn_submit">조회</button>
+			<button type="button" class="btn_inline">내용 지우기</button>
+			<button type="button" class="btn_inline">닫기</button>
+		</div>
+		<!-- //[e]btn_area -->
+
+
+	</div>
+	<!-- //[e]ly_cont -->
+
+</div>
+<!-- //[e]layer -->
+
+
+</body>
+</html>

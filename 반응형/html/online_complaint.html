@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+<script src="../js/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/seoul-common-gnb.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../css/board.css" />
+
+<!-- [D]서브관련 css 추가 -->
+<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+
+<script type="text/javascript" src="../js/jquery-1.12.4.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script type="text/javascript" src="../js/jquery.cycle2.js"></script>
+<script src="../js/gnb.js"></script>
+<script src="../js/design.js"></script>
+
+<!-- [D]서브관련 js 추가 -->
+<script type="text/javascript" src="../js/sub.js"></script>
+
+<title>온라인 민원신청 : 사이버고객센터</title>
+</head>
+<body>
+
+					<!-- [s]content_inner -->
+					<div class="content_inner">
+						
+						<!-- [s]stitle1 -->
+						<div class="stitle1">
+							<h3 class="tit">자주 신청하는 민원</h3>
+						</div>
+						<!-- //[e]stitle1 -->
+
+						<ul class="tab_ico_area1">
+							<li class="tab_ico_item1 m1">
+								<a href="#" class="tab_ico_link1">
+									최근에<br />
+									이사를<br />
+									하셨다면
+								</a>
+							</li>
+							<li class="tab_ico_item1 m2">
+								<a href="#" class="tab_ico_link1">
+									수도요금을<br />
+									자동납부<br />
+									하시려면
+								</a>
+							</li>
+							<li class="tab_ico_item1 m3">
+								<a href="#" class="tab_ico_link1">
+									수도계량기를<br />
+									폐지 <br />
+									하시려면
+								</a>
+							</li>
+							<li class="tab_ico_item1 m4">
+								<a href="#" class="tab_ico_link1">
+									누수발생으로<br />
+									요금을감면<br />
+									받으시려면
+								</a>
+							</li>
+							<li class="tab_ico_item1 m5">
+								<a href="#" class="tab_ico_link1">
+									수도계량기를<br />
+									교체<br />
+									하시려면
+								</a>
+							</li>
+						</ul>
+
+						<!-- [s]stitle1 -->
+						<div class="stitle1 stitle1_mt1">
+							<h3 class="tit">민원신청 목록</h3>
+						</div>
+						<!-- //[e]stitle1 -->
+
+						<div class="search_tbl_sec">
+							<div class="search_tbl_cell">
+
+								<span class="inp_txt">
+									<input type="text" id="" class="inp" value="" />
+								</span>	
+								<button type="button" class="btn_search">검색</button>
+
+							</div>
+						</div>
+
+						<ul class="tab_area1 tab_area1_type3">
+							<li class="tab_item1"><a href="#" class="tab_link1">전체</a></li>
+							<li class="tab_item1"><a href="#" class="tab_link1">요금관련</a></li>
+							<li class="tab_item1"><a href="#" class="tab_link1">수도계량기</a></li>
+							<li class="tab_item1"><a href="#" class="tab_link1">급수공사</a></li>
+							<li class="tab_item1"><a href="#" class="tab_link1">청구서/증명서</a></li>
+
+							<li class="tab_item1"><a href="#" class="tab_link1">옥내외 공사</a></li>
+							<li class="tab_item1"><a href="#" class="tab_link1">기타민원</a></li>
+						</ul>
+						
+						<!-- [s]tab_area1_cont -->
+						<div class="tab_area1_cont tab1_cont1">
+							<div class="tbl_line_sec1 tbl_line_sec1_mt1">
+								<table class="tbl_board1" summary="민원명,민원안내">
+									<caption><span class="blind">민원신청 내역</span></caption>
+									<colgroup>
+										<col style="width:30%" />
+										<col style="width:70%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">민원명</th>
+											<th scope="col" class="cell_last">민원안내</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><a href="#" class="in_txt_bold">급수설비 폐지신청</a></td>
+											<td class="cell_last cell_left">재건축 등으로 급수가 불필요한 경우 수도계량기를 폐지함.</td>
+										</tr>
+
+										<tr>
+											<td><a href="#" class="in_txt_bold">급수업종변경신고</a></td>
+											<td class="cell_last cell_left">현재 적용받고 있는 업종(가정용, 업무용, 영업용, 대중목욕탕용)을 변경하고자 하는 경우</td>
+										</tr>
+										<tr>
+											<td><a href="#" class="in_txt_bold">급수중지신고</a></td>
+											<td class="cell_last cell_left">장기간 수돗물을 사용할 필요가 없는 경우</td>
+										</tr>
+										<tr>
+											<td><a href="#" class="in_txt_bold">급수중지해제신고</a></td>
+											<td class="cell_last cell_left">급수중지된 수돗물을 다시 사용하고자 할 경우</td>
+										</tr>
+										<tr>
+											<td><a href="#" class="in_txt_bold">상하수도누수요금적용신청</a></td>
+											<td class="cell_last cell_left">옥내누수 발생시 누수량에 대한 요금 감면을 신청함</td>
+										</tr>
+										<tr>
+											<td><a href="#" class="in_txt_bold">상하수도요금 이의신청</a></td>
+											<td class="cell_last cell_left">수도요금과 각종 징수금에 대하여 이의가 있을 경우에 재조정을 요구함</td>
+										</tr>
+
+										<tr>
+											<td><a href="#" class="in_txt_bold">세대분할신고</a></td>
+											<td class="cell_last cell_left">1개의 수도계량기로 여러 세대가 사용할 경우 누진요금을 경감받음.</td>
+										</tr>
+										<tr>
+											<td><a href="#" class="in_txt_bold">소유자(사용자)명의변경신고</a></td>
+											<td class="cell_last cell_left">수도계량기가 소재한 건물의 소유자 또는 급수사용자가 변경되었을때</td>
+										</tr>
+										<tr>
+											<td><a href="#" class="in_txt_bold">수도요금 바로알림 신청(신규/변경/해지)</a></td>
+											<td class="cell_last cell_left">납부해야할  수도요금 내역을 휴대전화 메세지(문자 등)로 받아봄</td>
+										</tr>
+										<tr>
+											<td><a href="#" class="in_txt_bold">신·구 소유자(사용자)사용요금분리신고</a></td>
+											<td class="cell_last cell_left">신소유자(사용자)와 구소유자(사용자)의 사용요금을 분리하고자 할 경우</td>
+										</tr>
+										<tr>
+											<td><a href="#" class="in_txt_bold">자동납부 신규/해지</a></td>
+											<td class="cell_last cell_left">은행계좌에서 자동출금하여 수도요금을 납부</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- //[e]tab_area1_cont -->
+
+						<!-- [s]tab_area1_cont -->
+						<div class="tab_area1_cont tab1_cont2">
+							요금관련 내용 필요
+						</div>
+						<!-- //[e]tab_area1_cont -->
+
+						<!-- [s]tab_area1_cont -->
+						<div class="tab_area1_cont tab1_cont3">
+							 수도계량기 내용 필요
+						</div>
+						<!-- //[e]tab_area1_cont -->
+
+						<!-- [s]tab_area1_cont -->
+						<div class="tab_area1_cont tab1_cont4">
+							급수공사 내용 필요
+						</div>
+						<!-- //[e]tab_area1_cont -->
+
+						<!-- [s]tab_area1_cont -->
+						<div class="tab_area1_cont tab1_cont5">
+							 청구서/증명서 내용 필요
+						</div>
+						<!-- //[e]tab_area1_cont -->
+
+						<!-- [s]tab_area1_cont -->
+						<div class="tab_area1_cont tab1_cont6">
+							옥내외 공사  내용 필요
+						</div>
+						<!-- //[e]tab_area1_cont -->
+
+						<!-- [s]tab_area1_cont -->
+						<div class="tab_area1_cont tab1_cont7">
+							 기타민원 내용 필요
+						</div>
+						<!-- //[e]tab_area1_cont -->
+
+
+
+						
+
+					</div>
+					<!-- //[e]content_inner -->
+</body>
+</html>

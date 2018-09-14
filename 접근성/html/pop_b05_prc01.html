@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="all">
+<title>현장조사내용입력 : 고객지원시스템</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/design.common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<!-- [s]layer -->
+<!-- layer width: 1000 -->
+<div class="ly_pop">
+	<div class="blind"><h1>고객지원시스템 팝업</h1></div>
+	
+	<!-- [s]ly_cont -->
+	<div class="ly_cont">
+
+		<!-- [s]ly_stit1 -->
+		<div class="ly_stit1">
+			<h2 class="tit">현장조사내용입력</h2>
+		</div>
+		<!-- //[e]ly_stit1 -->
+
+		<table class="tbl_write1" summary="고객번호,수용가번호,소유자성명,전화번호,주소,도로명주소,업종,계량기구경,급수형태,폐전가능여부,폐전종류,계량기상태,폐전사유,최근계량기지침,기물번호,현계량기지침,봉인번호,사용잔량,사용일수,변상대금부과여부,변상대금,변상대금납기일자,현장및수전내역,변상대금부과사유,조사내용,수용가입회자,소유자와의관계,조사자,성명">
+			<caption><span class="blind">현장조사내용입력 내역</span></caption>
+			<colgroup>
+				<col style="width:130px;" />
+				<col />
+				<col style="width:130px;" />
+				<col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">고객번호</th>
+					<td>032502191</td>
+					<th scope="row">수용가번호</th>
+					<td>09128110515226012020</td>
+				</tr>
+				<tr>
+					<th scope="row">소유자성명</th>
+					<td>이진성</td>
+					<th scope="row">전화번호</th>
+					<td>010-7331-8530</td>
+				</tr>
+				<tr>
+					<th scope="row">주소</th>
+					<td colspan="3">03038 종로구 누상동-166-134 402호</td>
+				</tr>
+				<tr>
+					<th scope="row">도로명주소</th>
+					<td colspan="3">서울특별시 종로구 옥인6길 24 402호 (누상동)</td>
+				</tr>
+				<tr>
+					<th scope="row">업종</th>
+					<td>가정용(10)</td>
+					<th scope="row">계량기구경</th>
+					<td>15mm</td>
+				</tr>
+
+				<tr>
+					<th scope="row">급수형태</th>
+					<td>일반급수</td>
+					<th scope="row">폐전가능여부</th>
+					<td>
+						<span class="radiobox">
+							<span class="ico_radio"><input type="radio" name="" id="" /></span>
+							<label for="">가능</label>
+						</span>	
+						<span class="radiobox radiobox_ml1">
+							<span class="ico_radio"><input type="radio" name="" id="" /></span>
+							<label for="">불가</label>
+						</span>							
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">폐전종류</th>
+					<td>
+						<span class="radiobox">
+							<span class="ico_radio"><input type="radio" name="" id="" /></span>
+							<label for="">영구</label>
+						</span>	
+						<span class="radiobox radiobox_ml1">
+							<span class="ico_radio"><input type="radio" name="" id="" /></span>
+							<label for="">임시</label>
+						</span>					
+					</td>
+					<th scope="row"><label for="">계량기상태</label></th>
+					<td>
+						<select name="" id="" class="select_box" title="계량기상태 선택" style="width:170px;">
+							<option value="" selected="selected">전체</option>
+						</select>							
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">폐전사유</label></th>
+					<td>
+						<select name="" id="" class="select_box" title="폐전사유 선택" style="width:170px;">
+							<option value="" selected="selected">전체</option>
+						</select>							
+					</td>
+					<th scope="row">최근계량기지침</th>
+					<td>376</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">기물번호</label></th>
+					<td>
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>						
+					</td>
+					<th scope="row"><label for="">현계량기지침</label></th>
+					<td>
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>								
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">봉인번호</label></th>
+					<td>
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>						
+					</td>
+					<th scope="row"><label for="">사용잔량</label></th>
+					<td>
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>						
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row"><label for="">사용일수</label></th>
+					<td colspan="3">
+						<span class="inp_txt inp_cal" style="width:100px;">
+							<input type="text" name="" id="" class="inp" value="" title="시작 날짜"  />
+							<a href="#1" class="btn"><img alt="달력" src="../images/btn_cal.gif"></a>
+						</span>
+						<span class="txt_bar1">~</span>
+						<span class="inp_txt inp_cal" style="width:100px;">
+							<input type="text" name="" id="" class="inp" value="" title="마지막 날짜"  />
+							<a href="#1" class="btn"><img alt="달력" src="../images/btn_cal.gif"></a>
+						</span>
+
+						<button type="button" class="btn_inline_sm1 btn_inline_sm1_ml1">사용일수계산</button>
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">변상대금부과여부</th>
+					<td>
+						<span class="radiobox">
+							<span class="ico_radio"><input type="radio" name="" id="" /></span>
+							<label for="">미부과</label>
+						</span>	
+						<span class="radiobox radiobox_ml1">
+							<span class="ico_radio"><input type="radio" name="" id="" /></span>
+							<label for="">부과</label>
+						</span>							
+					</td>
+					<th scope="row"><label for="">변상대금</label></th>
+					<td>
+						<!-- [D]inp_txt가 disabled 경우 : inp_txt 클래스에 is_disabled  추가 및 input에 disabled="disabled"  추가 -->
+						<span class="inp_txt is_disabled" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" disabled="disabled" />
+						</span>							
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">변상대금납기일자</label></th>
+					<td>
+						<!-- [D]inp_txt가 disabled 경우 : inp_txt 클래스에 is_disabled  추가 및 input에 disabled="disabled"  추가 -->
+						<span class="inp_txt is_disabled" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="년도"  disabled="disabled" />
+						</span>
+						<span class="txt_word1">년</span>
+
+						<!-- [D]inp_txt가 disabled 경우 : inp_txt 클래스에 is_disabled  추가 및 input에 disabled="disabled"  추가 -->
+						<span class="inp_txt is_disabled" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="월"  disabled="disabled" />
+						</span>
+						<span class="txt_word1">월</span>
+
+						<!-- [D]inp_txt가 disabled 경우 : inp_txt 클래스에 is_disabled  추가 및 input에 disabled="disabled"  추가 -->
+						<span class="inp_txt is_disabled" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="일"  disabled="disabled" />
+						</span>
+						<span class="txt_word1">일</span>					
+					</td>
+					<th scope="row"><label for="">현장및수전내역</label></th>
+					<td>
+						<select name="" id="" class="select_box" title="현장및수전내역 선택" style="width:170px;">
+							<option value="" selected="selected">전체</option>
+						</select>							
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row"><label for="">변상대금부과사유</label></th>
+					<td colspan="3">
+						<span class="inp_txt is_disabled">
+							<input type="text" name="" id="" class="inp" value="" disabled="disabled" />
+						</span>					
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row"><label for="">조사내용</label></th>
+					<td colspan="3">
+<textarea name="" id="" class="text_area1"></textarea>		
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row"><label for="">수용가입회자</label></th>
+					<td>
+						<span class="inp_txt" style="width:120px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>									
+					</td>
+					<th scope="row"><label for="">소유자와의관계</label></th>
+					<td>
+						<span class="inp_txt" style="width:120px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>									
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">조사자</label></th>
+					<td>
+						<span class="txt_word1">직</span>
+						<span class="inp_txt" style="width:120px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>					
+					</td>
+					<th scope="row"><label for="">성명</label></th>
+					<td>
+						<span class="inp_txt" style="width:120px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>									
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- [s]ly_stit2 -->
+		<div class="ly_stit2">
+			<h3 class="tit">요금부과 내역</h3>
+		</div>
+		<!-- //[e]ly_stit2 -->
+
+		<table class="tbl_board1" summary="납기,계량기지침,사용량,계,기본요금,사용요금,하수도,물이용부담금">
+		<caption><span class="blind">요금부과 내역</span></caption>
+			<colgroup>
+				<col />
+				<col style="width:12%;" />
+				<col style="width:11%;" />
+				<col style="width:13%;" />
+				<col style="width:13%;" />
+				<col style="width:13%;" />
+
+				<col style="width:13%;" />
+				<col style="width:13%;" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">납기</th>
+					<th scope="col">계량기지침</th>
+					<th scope="col">사용량</th>
+					<th scope="col">계</th>
+					<th scope="col">기본요금</th>
+
+					<th scope="col">사용요금</th>
+					<th scope="col">하수도</th>
+					<th scope="col">물이용부담금</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2018-08-31</td>
+					<td>376</td>
+					<td>58</td>
+					<td class="cell_right">54,470</td>
+					<td class="cell_right">2,160</td>
+
+					<td class="cell_right">21,160</td>
+					<td class="cell_right">21,160</td>
+					<td class="cell_right">10,200</td>
+				</tr>
+				<tr>
+					<td>2018-08-31</td>
+					<td>376</td>
+					<td>58</td>
+					<td class="cell_right">54,470</td>
+					<td class="cell_right">2,160</td>
+
+					<td class="cell_right">21,160</td>
+					<td class="cell_right">21,160</td>
+					<td class="cell_right">10,200</td>
+				</tr>
+				<tr>
+					<td>2018-08-31</td>
+					<td>376</td>
+					<td>58</td>
+					<td class="cell_right">54,470</td>
+					<td class="cell_right">2,160</td>
+
+					<td class="cell_right">21,160</td>
+					<td class="cell_right">21,160</td>
+					<td class="cell_right">10,200</td>
+				</tr>
+				<tr>
+					<td>2018-08-31</td>
+					<td>376</td>
+					<td>58</td>
+					<td class="cell_right">54,470</td>
+					<td class="cell_right">2,160</td>
+
+					<td class="cell_right">21,160</td>
+					<td class="cell_right">21,160</td>
+					<td class="cell_right">10,200</td>
+				</tr>
+				<tr>
+					<td>2018-08-31</td>
+					<td>376</td>
+					<td>58</td>
+					<td class="cell_right">54,470</td>
+					<td class="cell_right">2,160</td>
+
+					<td class="cell_right">21,160</td>
+					<td class="cell_right">21,160</td>
+					<td class="cell_right">10,200</td>
+				</tr>
+				<tr>
+					<td>2018-08-31</td>
+					<td>376</td>
+					<td>58</td>
+					<td class="cell_right">54,470</td>
+					<td class="cell_right">2,160</td>
+
+					<td class="cell_right">21,160</td>
+					<td class="cell_right">21,160</td>
+					<td class="cell_right">10,200</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- [s]ly_stit2 -->
+		<div class="ly_stit2">
+			<h3 class="tit">체납납부정보</h3>
+		</div>
+		<!-- //[e]ly_stit2 -->
+
+		<table class="tbl_write1" summary="은행명,지점,납부일,금액,확인자">
+			<caption><span class="blind">체납납부정보 내역</span></caption>
+			<colgroup>
+				<col style="width:130px;" />
+				<col />
+				<col style="width:130px;" />
+				<col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">은행명</th>
+					<td>산업은행</td>
+					<th scope="row">지점</th>
+					<td>11</td>
+				</tr>
+				<tr>
+					<th scope="row">납부일</th>
+					<td colspan="3">2016/01/01</td>
+				</tr>
+				<tr>
+					<th scope="row">금액</th>
+					<td colspan="3">1,000원</td>
+				</tr>
+				<tr>
+					<th scope="row">확인자</th>
+					<td colspan="3"></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="notice_bx_inline1 notice_bx_inline1_mt1">
+			<div class="notice_bx_inline1_inner">
+				<!-- [D] checkbox 선택 시 .is_checked 추가 -->
+				<span class="checkbox is_checked">
+					<span class="ico ico_check"><input type="checkbox" name="" id="" /></span>
+					<label for="">체납납부확인</label>
+				</span>	
+			</div>
+		</div>
+
+
+		<div class="gray_bg_area1 gray_bg_area1_line_b0">
+			<!-- [D] checkbox 선택 시 .is_checked 추가 -->
+			<span class="checkbox is_checked">
+				<span class="ico ico_check"><input type="checkbox" name="" id="" /></span>
+				<label for="">기안생략</label>
+			</span>
+		</div>
+
+		<div class="gray_line_area1">
+			<span class="point_red">기안생략에 체크 하시면 '수도계량기 폐전처리', '인입관폐쇄의뢰' 공문기안 단계를 생략하고 계량기철거 부서로 이관합니다.</span>
+		</div>
+
+		<!-- [s]btn_area -->
+		<div class="ly_btn_area align_cn">
+			<button type="button" class="btn_inline btn_submit">저장</button>
+			<button type="button" class="btn_inline">닫기</button>
+		</div>
+		<!-- //[e]btn_area -->
+	
+
+	</div>
+	<!-- //[e]ly_cont -->
+
+</div>
+<!-- //[e]layer -->
+
+
+</body>
+</html>

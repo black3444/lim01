@@ -1,0 +1,70 @@
+﻿.seoul-gnb-icon-link, .seoul-gnb-icon-notice, .seoul-gnb-icon-menu1, .seoul-gnb-icon-menu2,
+.seoul-gnb-icon-menu3, .seoul-gnb-icon-menu4, .seoul-gnb-icon-section1, .seoul-gnb-icon-section2,
+.seoul-gnb-icon-section3, .seoul-gnb-icon-section4, .seoul-gnb-icon-section5, .seoul-gnb-icon-section6,
+.seoul-gnb-icon-section7, .seoul-gnb-icon-section8, .seoul-gnb-icon-section9, .seoul-gnb-icon-section10,
+.seoul-gnb-icon-section11, .seoul-gnb-icon-section12, .seoul-gnb-icon-service, .seoul-gnb-icon-service-close {display:block; overflow:hidden; vertical-align:middle; background-image:url(https://www.seoul.go.kr/seoulgnb/images/ico-sprite-common-gnb.png); text-indent:-9999px;}
+
+#seoul-gnb-plugin .seoul-gnb-icon-link {width:78px; height:20px; background-position:0 -20px;}
+#seoul-gnb-plugin .seoul-gnb-icon-notice {width:17px; height:11px; background-position:-17px -45px;}
+#seoul-gnb-plugin .seoul-gnb-icon-menu1 {width:54px; height:30px; background-position:-80px -30px;}
+#seoul-gnb-plugin .seoul-gnb-icon-menu2 {width:54px; height:30px; background-position:-134px -30px;}
+#seoul-gnb-plugin .seoul-gnb-icon-menu3 {width:54px; height:30px; background-position:-188px -30px;}
+#seoul-gnb-plugin .seoul-gnb-icon-menu4 {width:54px; height:30px; background-position:-242px -30px;}
+#seoul-gnb-plugin .seoul-gnb-icon-section1 {width:20px; height:20px; background-position:0 -60px;}
+#seoul-gnb-plugin .seoul-gnb-icon-section2 {width:20px; height:20px; background-position:-20px -60px;}
+#seoul-gnb-plugin .seoul-gnb-icon-section3 {width:20px; height:20px; background-position:-40px -60px;}
+#seoul-gnb-plugin .seoul-gnb-icon-section4 {width:20px; height:20px; background-position:-60px -60px;}
+#seoul-gnb-plugin .seoul-gnb-icon-section5 {width:20px; height:20px; background-position:-80px -60px;}
+#seoul-gnb-plugin .seoul-gnb-icon-section6 {width:20px; height:20px; background-position:-100px -60px;}
+#seoul-gnb-plugin .seoul-gnb-icon-section7 {width:20px; height:20px; background-position:0 -80px;}
+#seoul-gnb-plugin .seoul-gnb-icon-section8 {width:20px; height:20px; background-position:-20px -80px;}
+#seoul-gnb-plugin .seoul-gnb-icon-section9 {width:20px; height:20px; background-position:-40px -80px;}
+#seoul-gnb-plugin .seoul-gnb-icon-section10 {width:20px; height:20px; background-position:-60px -80px;}
+#seoul-gnb-plugin .seoul-gnb-icon-section11 {width:20px; height:20px; background-position:-80px -80px;}
+#seoul-gnb-plugin .seoul-gnb-icon-section12 {width:20px; height:20px; background-position:-100px -80px;}
+#seoul-gnb-plugin .seoul-gnb-icon-service {display:inline-block; width:36px; height:21px; background-position:-120px -60px;}
+#seoul-gnb-plugin .seoul-gnb-icon-service-close {width:17px; height:17px; background-position:-188px -60px;}
+
+#seoul-gnb-plugin.white .seoul-gnb-icon-link {background-position:0 0;}
+#seoul-gnb-plugin.white .seoul-gnb-icon-notice {background-position:0 -45px;}
+#seoul-gnb-plugin.white .seoul-gnb-icon-menu1 {background-position:-80px 0;}
+#seoul-gnb-plugin.white .seoul-gnb-icon-menu2 {background-position:-134px 0;}
+#seoul-gnb-plugin.white .seoul-gnb-icon-menu3 {background-position:-188px 0;}
+#seoul-gnb-plugin.white .seoul-gnb-icon-menu4 {background-position:-242px 0;border-right: 0;}
+
+#seoul-gnb-plugin {position:relative; z-index:99999; margin:0; width:100%; border-bottom:1px solid #5474c0; background-color:#5474c0; font:14px/1.5 "맑은 고딕", "Malgun Gothic", "dotum", "돋움", "gulim", "굴림", "sans-serif"; letter-spacing:-1px; color:#fff;}
+#seoul-gnb-plugin a {display:block; overflow:hidden; position:relative; text-decoration:none;}
+#seoul-gnb-plugin .seoul-gnb-holder {position:relative; margin:0 auto; padding:0 230px 0 0; max-width:1024px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; color:inherit;}
+#seoul-gnb-plugin .seoul-gnb-link {padding:4px 0 6px 0; margin:0; color:inherit;}
+#seoul-gnb-plugin .seoul-gnb-news {position:absolute; top:0; left:0; right:240px; left:109px; margin:0; padding:0; color:inherit;}
+#seoul-gnb-plugin .seoul-gnb-news dt {position:absolute; top:50%; left:0; margin:-6px 0 0 0; padding:0; width:17px; height:11px;}
+#seoul-gnb-plugin .seoul-gnb-news dd {margin:0; padding:0 0 0 23px; color:inherit;}
+#seoul-gnb-plugin .seoul-gnb-news dd a {height:31px; background-image:none; font-size:12px; line-height:31px; text-indent:0; text-overflow:ellipsis; white-space:nowrap; color:inherit;}
+#seoul-gnb-plugin .seoul-gnb-menu {position:absolute; top:0; right:0; margin:0; padding:0; border-right:1px solid rgba(255,255,255,0.1); border-left:1px solid rgba(62,95,171,0.8); background-color:#5474c0;}
+#seoul-gnb-plugin .seoul-gnb-menu > dt {position:absolute; width:0; height:0; overflow:hidden; text-indent:-9999px;}
+#seoul-gnb-plugin .seoul-gnb-menu > dd {float:left; margin:0; padding:0; border-left:1px solid rgba(255,255,255,0.1);}
+#seoul-gnb-plugin .seoul-gnb-menu > dd > a {border-right:1px solid rgba(62,95,171,0.8);}
+#seoul-gnb-plugin .seoul-gnb-menu > dd > button {background-color: transparent;border:0;border-right:1px solid rgba(62,95,171,0.8);cursor: pointer} /* add 2017-04-12 */
+#seoul-gnb-plugin .seoul-gnb-menu-section {position:absolute; top:35px; right:-1px; left:-40px; margin:0; padding:0; max-width:264px; border:1px solid #9b9b9b; box-shadow:0px 3px 6px 0px rgba(0,0,0,0.2); background:#fff;}
+#seoul-gnb-plugin .seoul-gnb-menu-section:before {content:" "; position:absolute; top:-7px; right:19px; margin:0; padding:0; width:12px; height:7px; overflow:hidden; background:url(https://www.seoul.go.kr/seoulgnb/images/ico-sprite-common-gnb.png) -40px -53px;}
+#seoul-gnb-plugin .seoul-gnb-menu-section dl {margin:0; padding:0;}
+#seoul-gnb-plugin .seoul-gnb-menu-section dt {margin:0; padding:11px 10px 6px 10px; border-bottom:1px solid #d0d0d0; color:#033333;}
+#seoul-gnb-plugin .seoul-gnb-menu-section dd {margin:0; padding:0;}
+#seoul-gnb-plugin .seoul-gnb-menu-section ul {position:relative; margin:0; padding:12px 0; overflow:hidden; list-style:none;}
+#seoul-gnb-plugin .seoul-gnb-menu-section ul:before {content:" "; position:absolute; top:0; bottom:0; left:50%; margin-left:-1px; width:1px; background:#d0d0d0;}
+#seoul-gnb-plugin .seoul-gnb-menu-section li {float:left; margin:0; padding:0; width:50%; list-style:none;}
+#seoul-gnb-plugin .seoul-gnb-menu-section li a {display:block; padding:4px 0 4px 10px; font-size:13px; color:#333 !important;}
+#seoul-gnb-plugin .seoul-gnb-menu-section li a span {display:inline-block; margin-right:5px;}
+#seoul-gnb-plugin .seoul-gnb-menu-section p {margin:0; padding:0; background:#eee; text-align:center;}
+#seoul-gnb-plugin .seoul-gnb-menu-section p a {display:block; padding:9px 0; color:#3399d7;}
+#seoul-gnb-plugin .seoul-gnb-menu-section button {position:absolute; top:10px; right:16px; margin:0; padding:0; border:0; background:#fff;cursor: pointer}
+#seoul-gnb-plugin .seoul-gnb-menu-section button .hd-element {overflow:hidden;position:absolute;width:0;height:0;font-size:0;line-height:0;text-indent:-1999888px;}
+
+#seoul-gnb-plugin.white {background-color:#fff; border-color:#ddd; color:#666;}
+#seoul-gnb-plugin.white .seoul-gnb-menu {border-right:1px solid #ece4e4; border-left:1px solid #fff; background:#fff;}
+#seoul-gnb-plugin.white .seoul-gnb-menu > dd {border-left:1px solid #e3e4e4;}
+#seoul-gnb-plugin.white .seoul-gnb-menu > dd > a {border-right:1px solid #fff;}
+
+@media all and (max-width:480px) {
+	#seoul-gnb-plugin.seoul-gnb-news {display:none;}
+}

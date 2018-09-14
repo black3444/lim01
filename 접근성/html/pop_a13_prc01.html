@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="all">
+<title>공사비 지원 승인검토 : 고객지원시스템</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/design.common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<!-- [s]layer -->
+<!-- layer width: 1000 -->
+<div class="ly_pop">
+	<div class="blind"><h1>고객지원시스템 팝업</h1></div>
+	
+	<!-- [s]ly_cont -->
+	<div class="ly_cont">
+
+		<!-- [s]ly_stit1 -->
+		<div class="ly_stit1">
+			<h2 class="tit">공사비 지원 승인검토</h2>
+			<div class="ly_stit1_pos_r">
+				<span class="stitle_dsc point_red">*은 필수 입력사항입니다.</span>
+			</div>
+		</div>
+		<!-- //[e]ly_stit1 -->
+
+		<table class="tbl_write1" summary="공사장소( 기본주소,상세주소 ),도로명주소,소유자성명(건물주),주민등록번호,건물현황,옥내배관재질,공사방법,공사범위,공사기간,특이사항,공사예정업체( 상호,대표자,기본주소,상세주소,도로명주소,전화번호 ),공사비예정금액,공사비지원승인금액,공사비지원입금통장,소유자(건물주)와의 관계,위임">
+			<caption><span class="blind">공사비 지원 승인검토 내역</span></caption>
+			<colgroup>
+				<col style="width:60px;" />
+				<col style="width:70px;" />
+				<col style="width:38%;" />
+				<col style="width:130px;" />
+				<col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="rowgroup" rowspan="2">공사장소 <span class="ico_star"><em class="blind">필수</em></span></th>
+					<th scope="row"><label for="">기본주소</label></th>
+					<td colspan="3">
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" title="우편번호" />
+						</span>
+						<button type="button" class="btn_inline_sm1">주소검색</button>
+						<div class="inp_field_sec">
+							<span class="inp_txt">
+								<input type="text" name="" id="" class="inp" value="" title="검색된주소" />
+							</span>
+						</div>					
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">상세주소</label></th>
+					<td colspan="3">
+
+						<span class="checkbox">
+							<label for="">산</label>
+							<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+						</span>
+
+						<span class="txt_word1 txt_word1_ml1">본번</span>
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="본번" />
+						</span>	
+
+						<span class="txt_word1 txt_word1_ml1">부번</span>
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="부번" />
+						</span>	
+
+						<div class="inp_field_sec">
+							<span class="txt_word1">특수주소(건물,아파트명)</span>
+							<span class="inp_txt" style="width:300px;">
+								<input type="text" name="" id="" class="inp" value="" title="특수주소(건물,아파트명)" />
+							</span>	
+						</div>
+
+						<div class="inp_field_sec">
+							<span class="txt_word1">동</span>
+							<span class="inp_txt" style="width:80px;">
+								<input type="text" name="" id="" class="inp" value="" title="동" />
+							</span>
+
+							<span class="txt_word1 txt_word1_ml1">호</span>
+							<span class="inp_txt" style="width:80px;">
+								<input type="text" name="" id="" class="inp" value="" title="호" />
+							</span>
+
+							<span class="checkbox checkbox_ml1">
+								<label for="">지하</label>
+								<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+							</span>
+
+							<span class="txt_word1 txt_word1_ml1">층번호</span>
+							<span class="inp_txt" style="width:80px;">
+								<input type="text" name="" id="" class="inp" value="" title="층번호" />
+							</span>
+						</div>
+
+						<div class="inp_field_sec">
+							<span class="txt_word1">기타주소</span>
+							<span class="inp_txt" style="width:300px;">
+								<input type="text" name="" id="" class="inp" value="" title="기타주소" />
+							</span>	
+						</div>
+
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" colspan="2"><label for="">도로명주소</label></th>
+					<td colspan="3">
+						<span class="inp_txt">
+							<input type="text" name="" id="" class="inp" value=""  />
+						</span>					
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" colspan="2">
+						<label for="">
+							소유자성명<br />
+							(건물주) <span class="ico_star"><em class="blind">필수</em></span>
+						</label>
+					</th>
+					<td>
+						<span class="inp_txt">
+							<input type="text" name="" id="" class="inp" value=""  />
+						</span>					
+					</td>
+					<th scope="row"><label for="">주민등록번호</label></th>
+					<td>
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="주민등록번호 앞자리"  />
+						</span>
+						<span class="txt_bar1">-</span>
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="주민등록번호 뒷자리"  />
+						</span>					
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" colspan="2"><label for="">건물현황</label></th>
+					<td>
+						<span class="txt_word1" style="width:55px;">용도 :</span>
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="용도" />
+						</span>
+
+						<span class="txt_word1 txt_word1_ml2" style="width:55px;">면적 :</span>
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="면적" />
+						</span>
+						<span class="txt_word1">㎡</span>
+
+						<div class="inp_field_sec">
+							<span class="txt_word1" style="width:55px;">가구수 :</span>
+							<span class="inp_txt" style="width:80px;">
+								<input type="text" name="" id="" class="inp" value="" title="가구수" />
+							</span>
+						</div>
+						
+					</td>
+					<th scope="row"><label for="">옥내배관재질</label></th>
+					<td>
+						<select name="" id="" class="select_box select_block" title="옥내배관재질 선택" >
+							<option value="" selected="selected">전체</option>
+						</select>					
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row" colspan="2"><label for="">공사방법</label> <span class="ico_star"><em class="blind">필수</em></span></th>
+					<td>
+						<select name="" id="" class="select_box select_block" title="공사방법 선택" >
+							<option value="" selected="selected">전체</option>
+						</select>							
+					</td>
+					<th scope="row"><label for="">공사범위</label> <span class="ico_star"><em class="blind">필수</em></span></th>
+					<td>
+						<select name="" id="" class="select_box select_block" title="공사범위 선택" >
+							<option value="" selected="selected">전체</option>
+						</select>							
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" colspan="2"><label for="">공사기간</label></th>
+					<td colspan="3">
+						<span class="inp_txt inp_cal" style="width:100px;">
+							<input type="text" name="" id="" class="inp" value="" title="시작 날짜"  />
+							<a href="#1" class="btn"><img alt="달력" src="../images/btn_cal.gif"></a>
+						</span>
+						<span class="txt_bar1">~</span>
+						<span class="inp_txt inp_cal" style="width:100px;">
+							<input type="text" name="" id="" class="inp" value="" title="마지막 날짜"  />
+							<a href="#1" class="btn"><img alt="달력" src="../images/btn_cal.gif"></a>
+						</span>											
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" colspan="2"><label for="">특이사항</label></th>
+					<td colspan="3">
+<textarea name="" id="" class="text_area1"></textarea>	
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="rowgroup" rowspan="5">공사예정업체	 <span class="ico_star"><em class="blind">필수</em></span></th>
+					<th scope="row"><label for="">상호</label></th>
+					<td>
+						<span class="inp_txt">
+							<input type="text" name="" id="" class="inp" value=""  />
+						</span>							
+					</td>
+					<th scope="row"><label for="">대표자</label></th>
+					<td>
+						<span class="inp_txt">
+							<input type="text" name="" id="" class="inp" value=""  />
+						</span>							
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">기본주소</label></th>
+					<td colspan="3">
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" title="우편번호" />
+						</span>
+						<button type="button" class="btn_inline_sm1">주소검색</button>
+						<div class="inp_field_sec">
+							<span class="inp_txt">
+								<input type="text" name="" id="" class="inp" value="" title="검색된주소" />
+							</span>
+						</div>					
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">상세주소</label></th>
+					<td colspan="3">
+					
+						<span class="checkbox">
+							<label for="">산</label>
+							<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+						</span>
+
+						<span class="txt_word1 txt_word1_ml1">본번</span>
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="본번" />
+						</span>	
+
+						<span class="txt_word1 txt_word1_ml1">부번</span>
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="부번" />
+						</span>	
+
+						<div class="inp_field_sec">
+							<span class="txt_word1">특수주소(건물,아파트명)</span>
+							<span class="inp_txt" style="width:300px;">
+								<input type="text" name="" id="" class="inp" value="" title="특수주소(건물,아파트명)" />
+							</span>	
+						</div>
+
+						<div class="inp_field_sec">
+							<span class="txt_word1">동</span>
+							<span class="inp_txt" style="width:80px;">
+								<input type="text" name="" id="" class="inp" value="" title="동" />
+							</span>
+
+							<span class="txt_word1 txt_word1_ml1">호</span>
+							<span class="inp_txt" style="width:80px;">
+								<input type="text" name="" id="" class="inp" value="" title="호" />
+							</span>
+
+							<span class="checkbox checkbox_ml1">
+								<label for="">지하</label>
+								<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+							</span>
+
+							<span class="txt_word1 txt_word1_ml1">층번호</span>
+							<span class="inp_txt" style="width:80px;">
+								<input type="text" name="" id="" class="inp" value="" title="층번호" />
+							</span>
+						</div>
+
+						<div class="inp_field_sec">
+							<span class="txt_word1">기타주소</span>
+							<span class="inp_txt" style="width:300px;">
+								<input type="text" name="" id="" class="inp" value="" title="기타주소" />
+							</span>	
+						</div>
+
+						<div class="inp_field_sec">
+							<span class="inp_txt">
+								<input type="text" name="" id="" class="inp" value="" title="기타 상세주소" />
+							</span>	
+						</div>
+					
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">도로명주소</label></th>
+					<td colspan="3">
+						<span class="inp_txt">
+							<input type="text" name="" id="" class="inp" value=""  />
+						</span>						
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">전화번호</label></th>
+					<td colspan="3">
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="지역번호"  />
+						</span>
+						<span class="txt_bar1">-</span>
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="전화번호 중간번호"  />
+						</span>
+						<span class="txt_bar1">-</span>
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="전화번호 끝번호"  />
+						</span>					
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row" colspan="2"><label for="">공사비예정금액</label> <span class="ico_star"><em class="blind">필수</em></span></th>
+					<td>
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>
+						<span class="txt_word1">원 </span>							
+					</td>
+					<th scope="row"><label for="">공사비지원<br />승인금액</label></th>
+					<td>
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>
+						<span class="txt_word1">원 </span>							
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" colspan="2"><label for="">공사비지원<br />입금통장</label> <span class="ico_star"><em class="blind">필수</em></span></th>
+					<td colspan="3">
+						<span class="txt_word1">은행명 :</span>	
+						<select name="" id="" class="select_box" title="은행명 선택" style="width:150px;">
+							<option value="" selected="selected">전체</option>
+						</select>		
+						
+						<span class="txt_word1 txt_word1_ml2">계좌번호 :</span>	
+						<span class="inp_txt" style="width:150px;">
+							<input type="text" name="" id="" class="inp" value="" title="계좌번호" />
+						</span>	
+
+						<span class="txt_word1 txt_word1_ml2">예금주 :</span>	
+						<span class="inp_txt" style="width:120px;">
+							<input type="text" name="" id="" class="inp" value="" title="예금주" />
+						</span>	
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" colspan="2"><label for="">소유자(건물주)<br />와의 관계</label></th>
+					<td>
+						<span class="inp_txt">
+							<input type="text" name="" id="" class="inp" value=""  />
+						</span>								
+					</td>
+					<th scope="row">위임</th>
+					<td>
+						공사비 지원금 수령을 <br /> 아래 예금주에게 위임 함 					
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- [s]btn_area -->
+		<div class="ly_btn_area align_cn">
+			<button type="button" class="btn_inline btn_submit">저장</button>
+			<button type="button" class="btn_inline">닫기</button>
+		</div>
+		<!-- //[e]btn_area -->
+	
+
+	</div>
+	<!-- //[e]ly_cont -->
+
+</div>
+<!-- //[e]layer -->
+
+
+</body>
+</html>

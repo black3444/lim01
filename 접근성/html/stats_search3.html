@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="all">
+<title>통계정보 : 고객지원시스템</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/design.common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="wrap">
+
+	<!-- [D]전페이지 공통 건너띄기 링크 제공 -->
+	<ul class="skip">
+		<li><a href="#header" onclick="document.getElementById('header').tabIndex=-1;document.getElementById('header').focus();return false;">주 메뉴 바로가기</a></li>
+		<li><a href="#container" onclick="document.getElementById('container').tabIndex=-1;document.getElementById('container').focus();return false">본문 바로가기</a></li>
+		<li><a href="#footer" onclick="document.getElementById('footer').tabIndex=-1;document.getElementById('footer').focus();return false">footer 바로가기</a></li>
+	</ul>
+
+	<!-- [S]HEADER -->
+	<div id="header" class="header">
+
+		<div class="header_top">
+			<div class="arisu_logo"><em class="blind">Iㆍ아리수ㆍU 상수도사업본부</em></div>
+			<div class="header_top_inner">
+				<span class="header_name">중부수도사업소 수도 1과 <strong>홍길동</strong> 님</span>
+				<span class="header_info_bar"></span>
+				<a href="#" class="header_login">로그아웃</a>
+				<div class="header_top_btn">
+					<button type="button" class="btn_remote">원격지원</button>
+					<button type="button" class="btn_help">HELP</button>  										
+				</div>
+			</div>
+		</div>
+		
+		<div class="header_bot">
+			<div class="header_bot_inner">
+				<h1 class="service_logo"><a href="#" class="service_logo_link"><em class="blind">Iㆍ아리수ㆍU 고객지원시스템</em></a></h1>
+				
+				<ul class="header_lst">
+					<li class="header_item m1">
+						<a href="#" class="header_link">민원</a>
+						<!-- [s]depth2_sec -->
+						<div class="header_depth2_sec">
+							<ul class="header_depth2_lst">
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check is_checked">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">민원신청</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">민원접수</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">민원처리(담당자지정)</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">민원처리</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">민원사무처리부(호소성민원)</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">민원부처리</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">G4C민원접수</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">민원처리확인</a>
+									</span>
+								</li>
+							</ul>							
+						</div>
+						<!-- //[e]depth2_sec -->
+					</li>
+					<li class="header_item">
+						<a href="#" class="header_link">현황</a>
+						<!-- [s]depth2_sec -->
+						<div class="header_depth2_sec">
+							<ul class="header_depth2_lst">
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">총괄현황</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">기관(부)현황</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">직원현황관리(SMS발송 대상)</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">방문에약민원현황</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">청구지주소현병현황</a>
+									</span>
+								</li>
+							</ul>							
+						</div>
+						<!-- //[e]depth2_sec -->
+					</li>
+					<li class="header_item">
+						<a href="#" class="header_link">대장</a>
+						<!-- [s]depth2_sec -->
+						<div class="header_depth2_sec">
+							<ul class="header_depth2_lst">
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">민원처리대장</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">민원사무처리부(호소성민원)</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">고객이력카드</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">수질민원처리대장</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">계량기교체 처리대장</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">급수불편해소 처리대장</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">공사용역물품 실적증명발급대장</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">수도요금납부증명 발급대장</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">옥내누수진단처리대장</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">급수설비폐지 처리대장</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">선제적누수진단실적대장</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">SMS 발송대장</a>
+									</span>
+								</li>
+							</ul>							
+						</div>
+						<!-- //[e]depth2_sec -->
+					</li>
+					<li class="header_item">
+						<a href="#" class="header_link">통계</a>
+						<!-- [s]depth2_sec -->
+						<div class="header_depth2_sec">
+							<ul class="header_depth2_lst">
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">통계정보</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">통계정보(월보)</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">월별통계(신규)</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">계량기교체 동파원인 통계</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">통계정보(동파)</a>
+									</span>
+								</li>
+							</ul>							
+						</div>
+						<!-- //[e]depth2_sec -->
+					</li>
+					<li class="header_item">
+						<a href="#" class="header_link">커뮤니티</a>
+						<!-- [s]depth2_sec -->
+						<div class="header_depth2_sec">
+							<ul class="header_depth2_lst">
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">공지사항관리</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">FAQ관리</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">개선요청게시판</a>
+									</span>
+								</li>
+							</ul>							
+						</div>
+						<!-- //[e]depth2_sec -->
+					</li>
+					<li class="header_item">
+						<a href="#" class="header_link">관리자</a>
+						<!-- [s]depth2_sec -->
+						<div class="header_depth2_sec">
+							<ul class="header_depth2_lst">
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">민원처리담당자변경</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">부재설정 및 대직자지정 관리</a>
+									</span>
+								</li>
+								<li class="header_depth2_item">
+									<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+									<span class="bookmark_check">
+										<span class="ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+										<a href="#" class="bookmark_link">고객지원로그열람</a>
+									</span>
+								</li>
+							</ul>							
+						</div>
+						<!-- //[e]depth2_sec -->
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+	</div>
+	<!-- //[D]HEADER -->
+
+	<!-- [S]CONTENTS -->
+	<div id="container" class="content_wrap">
+		
+		<!-- [s]lnb_nav_area -->
+		<div class="lnb_nav_area">
+			<ul class="lnb_tab_lst">
+				<li class="lnb_tab_item m1">
+					<a href="#" class="lnb_tab_link"><em class="sp">메뉴보기</em></a>
+					<!--[s]lnb_nav_cont -->
+					<div class="lnb_nav_cont">
+						<h2 class="blind">서브메뉴</h2>
+						<div class="lnb_nav_title">민원</div>
+						<!-- [D]현재 클릭된 페이지 위치에 따른 메뉴 select 처리 필요 : lnb_nav_item 클래스에 is_select 추가 -->
+						<ul class="lnb_nav_lst">
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check is_checked">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">민원신청</a>
+								</span>					
+							</li>
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">민원접수</a>
+								</span>					
+							</li>
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">민원처리(담당자지정)</a>
+								</span>					
+							</li>
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">민원처리</a>
+								</span>					
+							</li>
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">민원사무처리부(호소성민원)</a>
+								</span>					
+							</li>
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">민원부처리</a>
+								</span>					
+							</li>
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">G4C민원접수</a>
+								</span>					
+							</li>
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">민원처리확인</a>
+								</span>					
+							</li>
+						</ul>
+					</div>
+					<!--//[e]lnb_nav_cont -->
+				</li>
+				<li class="lnb_tab_item m2">
+					<a href="#" class="lnb_tab_link"><em class="sp">즐겨찾기</em></a>
+					<!--[s]lnb_nav_cont -->
+					<div class="lnb_nav_cont">
+						
+						<p class="bookmark_none">
+							메뉴명 앞의  <span class="ico_star"><em class="blind">별모양</em></span> 을 눌러서 <br />
+							즐겨찾기 메뉴를 만드세요
+						</p>
+
+						<ul class="lnb_nav_lst">
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">민원신청민원신청민원신청민원신청민원신청민원신청민원신청</a>
+								</span>					
+							</li>
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">민원접수</a>
+								</span>					
+							</li>
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">민원처리(담당자지정)</a>
+								</span>					
+							</li>
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">민원처리</a>
+								</span>					
+							</li>
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">민원사무처리부(호소성민원)</a>
+								</span>					
+							</li>
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">민원부처리</a>
+								</span>					
+							</li>
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">G4C민원접수</a>
+								</span>					
+							</li>
+							<li  class="lnb_nav_item">
+								<!-- [D] checkbox 선택 시 : bookmark_check클래스에 .is_checked 추가 -->
+								<span class="bookmark_check">
+									<span class="ico ico_check"><input type="checkbox" name="" id="" title="즐겨찾기 선택" /></span>
+									<a href="#" class="bookmark_link">민원처리확인</a>
+								</span>					
+							</li>
+						</ul>
+					</div>
+					<!--//[e]lnb_nav_cont -->
+				</li>
+			</ul>
+		</div>
+		<!-- //[e]lnb_nav_area -->
+		
+		<!-- [s]content -->
+		<div class="content">
+			
+			<!-- [s]content_inner -->
+			<div class="content_inner">
+
+				<div class="cont_title_area">
+					<h3 class="tit">통계정보</h3>
+					<div class="location">
+						<div class="location_inner">
+							HOME &gt; 통계 &gt; <strong>통계정보</strong>
+						</div>
+					</div>	
+				</div>
+
+				<!-- [s]tab_area1 -->
+				<!-- [D]선택시 is_select 클래스 사용 -->
+				<ul class="tab_area1">
+					<li class="tab_area1_item"><a href="#" class="tab_area1_link">민원유형별</a></li>
+					<li class="tab_area1_item"><a href="#" class="tab_area1_link">사업소별</a></li>
+					<li class="tab_area1_item is_select"><a href="#" class="tab_area1_link">시간대별</a></li>
+				</ul>
+				<!-- //[e]tab_area1 -->
+
+				<table class="tbl_write1" summary="기간,민원유형,사업소,신청방법,신청구분">
+				<caption><span class="blind">시간대별 내역</span></caption>
+					<colgroup>
+						<col style="width:130px;" />
+						<col />
+						<col style="width:130px;" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="">기간</label></th>
+							<td colspan="3">
+								<select name="" id="" class="select_box" title="기간 선택">
+									<option value="" selected="selected">전체</option>
+								</select>
+
+								<span class="inp_txt inp_cal" style="width:100px;">
+									<input type="text" name="" id="" class="inp" value="" title="시작 날짜"  />
+									<a href="#1" class="btn"><img alt="달력" src="../images/btn_cal.gif"></a>
+								</span>
+								<span class="txt_bar1">~</span>
+								<span class="inp_txt inp_cal" style="width:100px;">
+									<input type="text" name="" id="" class="inp" value="" title="마지막 날짜"  />
+									<a href="#1" class="btn"><img alt="달력" src="../images/btn_cal.gif"></a>
+								</span>
+
+								<button type="button" class="btn_inline_sm1">기간지우기</button>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="">민원유형</label></th>
+							<td>
+								<select name="" id="" class="select_box select_block" title="민원유형 선택" >
+									<option value="" selected="selected">전체</option>
+								</select>							
+							</td>
+							<th scope="row"><label for="">사업소</label></th>
+							<td>
+								<select name="" id="" class="select_box select_block" title="사업소 선택" >
+									<option value="" selected="selected">전체</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="">신청방법</label></th>
+							<td>
+								<select name="" id="" class="select_box select_block" title="신청방법 선택" >
+									<option value="" selected="selected">전체</option>
+								</select>							
+							</td>
+							<th scope="row"><label for="">신청구분</label></th>
+							<td>
+								<select name="" id="" class="select_box select_block" title="신청구분 선택" >
+									<option value="" selected="selected">전체</option>
+								</select>							
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!-- [s]btn_area -->
+				<div class="btn_area align_cn btn_area_mt1">
+					<button type="button" class="btn_inline">엑셀 다운로드</button>
+					<button type="button" class="btn_inline btn_submit">검색</button>
+					<button type="button" class="btn_inline">초기화</button>
+				</div>
+				<!-- //[e]btn_area -->
+
+
+					<!-- [s]chart_sec -->
+					<div class="chart_sec">
+
+						<!-- [D]시간대 별 일 경우 : chart_cell_tit 영역 삭제 및 chart_total_sec 클래스 추가 함 -->
+						<div class="chart_cell_sec chart_cell_wid1 chart_total_sec">
+							<div class="chart_cell_cont">
+								총 접수<br />
+								<em class="point_sky">1,875</em>건
+							</div>
+						</div>
+
+
+						<div class="chart_cell_sec chart_cell_wid2">
+							<div class="chart_cell_tit">
+								<span class="tit">기간별 변화추이</span>
+							</div>
+							<div class="chart_cell_cont">
+								<!-- [D]w:506px / h:278px : 추후에 그래프 넣는다고 하셨음,(이미지 처리함) -->
+								<img src="../images/@thumb_graph2.gif" alt="" class="thumb_img" />
+							</div>
+						</div>
+					</div>
+					<!-- //[e]chart_sec -->
+
+					<table class="tbl_board1 tbl_board1_mt1" summary="시간대,접수건수">
+					<caption><span class="blind">통계정보 내역</span></caption>
+						<colgroup>
+							<col />
+							<col style="width:50%;" />												
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">시간대</th>
+								<th scope="col">접수건수</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>0시 이후 ~ 1시</td>
+								<td>0건</td>
+							</tr>
+							<tr>
+								<td>1시 이후 ~ 2시</td>
+								<td>29건</td>
+							</tr>
+						</tbody>
+					</table>
+
+
+
+			</div>
+			<!-- //[e]content_inner -->
+
+		</div>
+		<!-- //[e]content -->
+
+	</div>
+	<!-- //[D]CONTENTS -->
+
+	<!-- [S]FOTTER -->
+	<div id="footer" class="footer">
+		<div class="footer_inner">
+			<div class="footer_left_sec"><span class="footer_logo1"><em class="blind">서울시상수도본부 ⓒ 2017 서울특별시 상수도사업본부. All right reserved.</em></span></div>
+			<div class="footer_cont">
+				<div class="footer_logo2"><em class="blind">아리수 시스템문의</em></div>
+				<ul class="footer_info_lst">
+					<li class="footer_info_item">
+						<span class="footer_info_tit">요금 및 기타민원</span>
+						<span class="footer_info_txt">전산과 3146-1567 신현희</span>
+					</li>
+					<li class="footer_info_item">
+						<span class="footer_info_tit">급수관련 민원</span>
+						<span class="footer_info_txt">전산과 3146-1570 정인선</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //[D]FOTTER -->
+
+</div>
+
+</body>
+</html>

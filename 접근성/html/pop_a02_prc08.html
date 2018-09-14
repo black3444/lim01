@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="all">
+<title>현장조사결과입력 : 고객지원시스템</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/design.common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<!-- [s]layer -->
+<!-- layer width: 1000 -->
+<div class="ly_pop">
+	<div class="blind"><h1>고객지원시스템 팝업</h1></div>
+	
+	<!-- [s]ly_cont -->
+	<div class="ly_cont">
+
+		<!-- [s]ly_stit1 -->
+		<div class="ly_stit1">
+			<h2 class="tit">현장조사결과입력</h2>
+		</div>
+		<!-- //[e]ly_stit1 -->
+
+		<table class="tbl_write1" summary="교체사유,현장조사일,조사결과,담당부서,요금조정여부,조사내용(불가사유),변상대금,입회자,수용가와의관계,조사자,성명">
+			<caption><span class="blind">현장조사 결과입력 내역</span></caption>
+			<colgroup>
+				<col style="width:130px;" />
+				<col />
+				<col style="width:130px;" />
+				<col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row"><label for="">교체사유</label></th>
+					<td>
+						<select name="" id="" class="select_box select_block" title="교체사유 선택">
+							<option value="" selected="selected">전체</option>
+						</select>
+					</td>
+					<th scope="row"><label for="">현장조사일</label></th>
+					<td>
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="년도" />
+						</span>
+						<span class="txt_word1">년</span>
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="월" />
+						</span>
+						<span class="txt_word1">월</span>
+						<span class="inp_txt" style="width:80px;">
+							<input type="text" name="" id="" class="inp" value="" title="일" />
+						</span>
+						<span class="txt_word1">일</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">조사결과</th>
+					<td colspan="3">
+						<span class="radiobox">
+							<span class="ico_radio">
+								<input type="radio" name="" id="">
+							</span>
+							<label for="">조례위반조사</label>
+						</span>
+						<span class="radiobox radiobox_ml1">
+							<span class="ico_radio">
+								<input type="radio" name="" id="">
+							</span>
+							<label for="">교체요청</label>
+						</span>
+						<span class="radiobox radiobox_ml1">
+							<span class="ico_radio">
+								<input type="radio" name="" id="">
+							</span>
+							<label for="">이상없음</label>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">담당부서</label></th>
+					<td colspan="3">
+						<span class="inp_txt is_disabled" style="width:170px;">
+							<input type="text" name="" id="" class="inp" disabled="disabled" value="요금과" />
+						</span>
+					</td>
+				</tr>
+				<tr><!-- 추가 셀-->
+					<th scope="row">요금조정여부</th>
+					<td colspan="3">
+						<span class="checkbox">
+							<span class="ico_check">
+								<input type="checkbox" name="" id="">
+							</span>
+							<label for="">필요</label>
+						</span>
+					</td>
+				</tr><!-- 추가 셀-->
+				<tr>
+					<th scope="row"><label for="">조사내용<br />(불가사유)</label></th>
+					<td colspan="3">
+						<textarea name="" id="" class="text_area1"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">변상대금</th>
+					<td colspan="3">
+						<span class="radiobox">
+							<span class="ico_radio">
+								<input type="radio" name="" id="">
+							</span>
+							<label for="">부과대상</label>
+						</span>
+						<span class="txt_word1">(</span>
+						<span class="checkbox">
+							<span class="ico_check">
+								<input type="checkbox" name="" id="">
+							</span>
+							<label for="">계량기대금</label>
+						</span>
+						<span class="checkbox checkbox_ml1">
+							<span class="ico_check">
+								<input type="checkbox" name="" id="">
+							</span>
+							<label for="">교체비용</label>
+						</span>
+						<span class="txt_word1">)</span>
+						<span class="radiobox radiobox_ml1">
+							<span class="ico_radio">
+								<input type="radio" name="" id="">
+							</span>
+							<label for="">부과제외</label>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">입회자</label></th>
+					<td>
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>
+					</td>
+					<th scope="row"><label for="">수용가와의관계</label></th>
+					<td>
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">조사자</label></th>
+					<td>
+						<span class="txt_word1">직</span>
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>
+					</td>
+					<th scope="row"><label for="">성명</label></th>
+					<td>
+						<span class="inp_txt" style="width:170px;">
+							<input type="text" name="" id="" class="inp" value="" />
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		
+		<!-- [s]ly_stit1 -->
+		<div class="ly_stit1">
+			<h2 class="tit">수용가내역</h2>
+		</div>
+		<!-- //[e]ly_stit1 -->
+
+		<table class="tbl_write1" summary="고객번호,소유자성명,주소,도로명주소,업종,구경,기물번호,봉인번호,교체사유">
+			<caption><span class="blind">수용가 내역</span></caption>
+			<colgroup>
+				<col style="width:130px;" />
+				<col />
+				<col style="width:130px;" />
+				<col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">고객번호</th>
+					<td>006238220</td>
+					<th scope="row">소유자성명</th>
+					<td>화인산업주식회사</td>
+				</tr>
+				<tr>
+					<th scope="row">주소</th>
+					<td colspan="3">045-26 중구 북창동 125-1</td>
+				</tr>
+				<tr>
+					<th scope="row">도로명주소</th>
+					<td colspan="3">서울특별시 중구 남대문로1길 10-8 (북창동)</td>
+				</tr>
+				<tr>
+					<th scope="row">업종</th>
+					<td>일반용(30)</td>
+					<th scope="row">구경</th>
+					<td>20mm</td>
+				</tr>
+				<tr>
+					<th scope="row">기물번호</th>
+					<td>R0400013658</td>
+					<th scope="row">봉인번호</th>
+					<td>755039</td>
+				</tr>
+				<tr>
+					<th scope="row">교체사유</th>
+					<td colspan="3">동파</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+		<!-- [s]btn_area -->
+		<div class="ly_btn_area align_cn">
+			<button type="button" class="btn_inline btn_submit">저장</button>
+			<button type="button" class="btn_inline">닫기</button>
+		</div>
+		<!-- //[e]btn_area -->
+	
+
+	</div>
+	<!-- //[e]ly_cont -->
+
+</div>
+<!-- //[e]layer -->
+
+
+</body>
+</html>

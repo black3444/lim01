@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+<script src="../js/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/seoul-common-gnb.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../css/board.css" />
+
+<!-- [D]서브관련 css 추가 -->
+<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+
+<script type="text/javascript" src="../js/jquery-1.12.4.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script type="text/javascript" src="../js/jquery.cycle2.js"></script>
+<script src="../js/gnb.js"></script>
+<script src="../js/design.js"></script>
+
+<!-- [D]서브관련 js 추가 -->
+<script type="text/javascript" src="../js/sub.js"></script>
+
+<title>정수처분해제신청 : 사이버고객센터</title>
+</head>
+<body>
+
+					<!-- [s]content_inner -->
+					<div class="content_inner">
+						
+						<!-- [s]stitle1 -->
+						<div class="stitle1">
+							<h3 class="tit">정수처분해제신청</h3>
+						</div>
+						<!-- //[e]stitle1 -->
+
+
+						<!-- [D]선택시 : step_item1 클래스에 is_select 추가 -->
+						<ol class="step_area1">
+							<li class="step_item1 is_select">
+								<div class="step_sec1">
+									신청
+								</div>
+							</li>
+							<li class="step_item1">
+								<div class="step_sec1">
+									민원접수
+								</div>
+							</li>
+							<li class="step_item1">
+								<div class="step_sec1">
+									해당과 처리
+								</div>
+							</li>
+							<li class="step_item1">
+								<div class="step_sec1">
+									조치완료
+								</div>
+							</li>
+						</ol>
+						
+						<div class="area_space1"></div>
+
+
+						<ul class="tab_area1">
+							<li class="tab_item1"><a href="#" class="tab_link1">민원신청</a></li>
+							<li class="tab_item1"><a href="#" class="tab_link1">민원안내&middot;처리절차</a></li>
+						</ul>
+
+
+						<!-- [s]tab_area1_cont -->
+						 <div class="tab_area1_cont tab1_cont1">
+						 
+							<!-- [s]stitle2 -->
+							<div class="stitle2">
+								<h4 class="tit">수용가정보</h4>
+								<span class="value_txt_dsc"><em class="point_red">*</em> 는 필수입력사항입니다.</span>
+							</div>
+							<!-- //[e]stitle2 -->
+
+
+							<div class="tbl_line_sec1">
+								<table class="tbl_write1" summary="고객번호,수용가명,사용자,소유자,기본주소,상세주소,도로명주소,전화번호,업종">
+								<caption><span class="blind">수용가정보 내역</span></caption>
+									<colgroup>
+										<col style="width:80px" />
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">고객번호</label> <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<!-- [D]inp_txt가 disabled 경우 : inp_txt 클래스에 is_disabled  추가 및 input에 disabled="disabled"  추가 -->
+												<span class="inp_txt  is_disabled">
+													<input type="text" name="" id="" class="inp" value="" disabled="disabled"  />
+												</span>
+												<div class="inp_field_block">
+													<span class="txt_word1">고객번호는 요금 청구서에서 확인하실 수 있으며(<a href="#" title="새창으로 이동" class="point_red">위치보기</a>), 홈페이지에 회원가입하여 등록하신 경우 마이페이지에서 볼 수 있습니다.</span>
+												</div>											
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">수용가명</label> <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid6">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>
+												<button type="button" class="btn_inline_sm1" disabled="disabled">검색</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">사용자</label></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid6">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">소유자</label></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid6">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>
+											</td>
+										</tr>
+
+										<tr>
+											<th scope="row"><label for="">기본주소</label></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid6">
+													<input type="text" name="" id="" class="inp" value="" title="우편번호" />
+												</span>
+												<div class="inp_field_block">
+													<span class="inp_txt">
+														<input type="text" name="" id="" class="inp" value="" title="검색된주소" />
+													</span>												
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">상세주소</label></th>
+											<td class="cell_last">
+												<span class="inp_txt">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>										
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">도로명주소</label></th>
+											<td class="cell_last">
+												<span class="inp_txt">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>										
+											</td>
+										</tr>
+
+										<tr>
+											<th scope="row"><label for="">전화번호</label></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="지역번호"  />
+												</span>
+												<span class="txt_bar1">-</span>
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="전화번호 중간번호"  />
+												</span>
+												<span class="txt_bar1">-</span>
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="전화번호 끝번호"  />
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">업종</label></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid6">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>							
+							</div>
+
+
+							<!-- [s]stitle2 -->
+							<div class="stitle2">
+								<h4 class="tit">정수처분일</h4>
+							</div>
+							<!-- //[e]stitle2 -->
+							
+							<div class="tbl_line_sec1">
+								<table class="tbl_write1" summary="정수처분일">
+								<caption><span class="blind">정수처분일 내역</span></caption>
+									<colgroup>
+										<col style="width:80px" />
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">정수처분일</label></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="년도"  />
+												</span>
+												<span class="txt_word1">년</span>
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="월"  />
+												</span>
+												<span class="txt_word1">월</span>
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="일"  />
+												</span>
+												<span class="txt_word1">일</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>							
+							</div>
+
+
+							<!-- [s]stitle2 -->
+							<div class="stitle2">
+								<h4 class="tit">정수처분사유</h4>
+							</div>
+							<!-- //[e]stitle2 -->
+							
+							<div class="tbl_line_sec1">
+								<table class="tbl_write1" summary="정수처분사유">
+								<caption><span class="blind">정수처분사유 내역</span></caption>
+									<colgroup>
+										<col style="width:80px" />
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">정수처분사유</label></th>
+											<td class="cell_last">
+												<span class="inp_txt">
+													<input type="text" name="" id="" class="inp" value=""  />
+												</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>							
+							</div>
+
+
+							<!-- [s]stitle2 -->
+							<div class="stitle2">
+								<h4 class="tit">신청인</h4>
+							</div>
+							<!-- //[e]stitle2 -->
+							
+							<div class="tbl_line_sec1">
+								<table class="tbl_write1" summary="성명,기본주소,상세주소,도로명주소,전화번호,휴대폰번호,E-Mail,관계">
+								<caption><span class="blind">신청인 내역</span></caption>
+									<colgroup>
+										<col style="width:80px" />
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">성명</label>  <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid6">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">기본주소</label>  <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid6">
+													<input type="text" name="" id="" class="inp" value="" title="우편번호" />
+												</span>
+												<button type="button" class="btn_inline_sm1">검색</button>
+												<button type="button" class="btn_inline_sm1">상동</button>
+												<div class="inp_field_block">
+													<span class="inp_txt">
+														<input type="text" name="" id="" class="inp" value="" title="검색된주소" />
+													</span>												
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">상세주소</label>  <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												
+												<!-- [s]inp_field_bx : 내려쓰기 박스 -->
+												<div class="inp_field_bx">
+													<div class="inp_field_block">
+														<!-- [D]선택시 : is_checked 클래스 추가 -->
+														<span class="checkbox checkbox_mr1 checkbox_rig is_checked">
+															<label for="">산</label>
+															<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+														</span>
+
+														<span class="txt_word1">본번</span>
+														<span class="inp_txt inp_txt_wid3 inp_txt_mr1">
+															<input type="text" name="" id="" class="inp" value="" title="본번" />
+														</span>	
+
+														<span class="txt_word1">부번</span>
+														<span class="inp_txt inp_txt_wid3">
+															<input type="text" name="" id="" class="inp" value="" title="부번" />
+														</span>	
+													</div>
+
+													<div class="inp_field_block">
+														<span class="txt_word1">특수주소(건물,아파트명)</span>
+														<span class="inp_txt">
+															<input type="text" name="" id="" class="inp" value="" title="특수주소(건물,아파트명)" />
+														</span>	
+													</div>
+
+													<div class="inp_field_block">
+														<span class="txt_word1">동</span>
+														<span class="inp_txt inp_txt_wid3 inp_txt_mr1">
+															<input type="text" name="" id="" class="inp" value="" title="동" />
+														</span>
+
+														<span class="txt_word1">호</span>
+														<span class="inp_txt inp_txt_wid3 inp_txt_mr1">
+															<input type="text" name="" id="" class="inp" value="" title="호" />
+														</span>
+
+														<span class="checkbox checkbox_mr1 checkbox_rig">
+															<label for="">지하</label>
+															<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+														</span>
+														<span class="txt_word1">층번호</span>
+														<span class="inp_txt inp_txt_wid3">
+															<input type="text" name="" id="" class="inp" value="" title="층번호" />
+														</span>
+													</div>
+
+													<div class="inp_field_block inp_field_block_mt0">
+														<span class="txt_word1">기타주소</span>
+														<span class="inp_txt">
+															<input type="text" name="" id="" class="inp" value="" title="기타주소" />
+														</span>	
+													</div>
+												</div>
+												<!-- //[e]inp_field_bx : 내려쓰기 박스 -->
+
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">도로명주소</label></th>
+											<td class="cell_last">
+												<span class="inp_txt">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>										
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">전화번호</label>  <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="지역번호"  />
+												</span>
+												<span class="txt_bar1">-</span>
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="전화번호 중간번호"  />
+												</span>
+												<span class="txt_bar1">-</span>
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="전화번호 끝번호"  />
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">휴대폰번호</label>  <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="휴대폰식별번호"  />
+												</span>
+												<span class="txt_bar1">-</span>
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="휴대폰번호 중간번호"  />
+												</span>
+												<span class="txt_bar1">-</span>
+												<span class="inp_txt inp_txt_wid3">
+													<input type="text" name="" id="" class="inp" value="" title="휴대폰번호 끝번호"  />
+												</span>
+												<div class="inp_field_block">
+													<span class="checkbox">												
+														<span class="ico_check"><input type="checkbox" name="" id="" /></span>
+														<label for="">SMS수신동의</label>
+													</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">E-Mail</label></th>
+											<td class="cell_last">
+												<span class="inp_txt">
+													<input type="text" name="" id="" class="inp" value="" />
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">관계</label>  <span class="ico_star"><em class="blind">필수</em></span></th>
+											<td class="cell_last">
+
+												<!-- 
+													[D]inp_field_block : inline-block 블록 내려쓰기하는 클래스(inp_field_bx 크게 div로 감싸서 클래스 처리
+												-->
+												
+												<!-- [s]inp_field_bx : 내려쓰기 박스 -->
+												<div class="inp_field_bx">
+													<div class="inp_field_block">
+														<select name="" id="" class="select_box" title="가족관계 선택" style="width:80px;">
+															<option value="" selected="selected">현사용자</option>
+														</select>
+														<span class="txt_word1 txt_word1_mr1">의</span>
+												
+														<span class="radiobox radiobox_mr1">
+															<span class="ico_radio"><input type="radio" name="" id="" /></span>
+															<label for="">본인</label>
+														</span>	
+														<span class="radiobox radiobox_mr1">
+															<span class="ico_radio"><input type="radio" name="" id="" /></span>
+															<label for="">배우자</label>
+														</span>	
+														<span class="radiobox radiobox_mr1">
+															<span class="ico_radio"><input type="radio" name="" id="" /></span>
+															<label for="">자녀</label>
+														</span>
+										
+														<span class="radiobox radiobox_mr1">
+															<span class="ico_radio"><input type="radio" name="" id="" /></span>
+															<label for="">직접입력</label>
+														</span>
+														<span class="inp_txt inp_txt_wid6">
+															<input type="text" name="" id="" class="inp" value="" title="가족관계 입력"  />
+														</span>
+													</div>
+												</div>
+												<!-- //[e]inp_field_bx : 내려쓰기 박스 -->
+
+											</td>
+										</tr>
+									</tbody>
+								</table>							
+							</div>
+
+							<!-- [s]btn_area -->
+							<div class="btn_area align_cn">
+								<div class="btn_area_cont">
+									<button type="button" class="btn_inline btn_submit">등록</button>	
+									<button type="button" class="btn_inline">취소</button>
+									<button type="button" class="btn_inline">내용 지우기</button>
+								</div>
+							</div>
+							<!-- //[e]btn_area -->
+
+						 </div>
+						 <!-- //[e]tab_area1_cont -->
+
+						<!-- [s]tab_area1_cont -->
+						 <div class="tab_area1_cont tab1_cont2">
+
+							<!-- [s]stitle1 -->
+							<div class="stitle1 stitle1_mt1">
+								<h3 class="tit">정수처분해제신청</h3>
+							</div>
+							<!-- //[e]stitle1 -->
+
+							<ul class="notice_lst1">
+								<li class="notice_item1">수도요금 체납등으로 정수처분(수돗물 공급중단조치)된 건물의 소유자(사용자)가 수도요금 체납금 등을 완납한 후 관할 수도사업소에 정수처분 해제신청을 하는 민원입니다.</li>
+								<li class="notice_item1 point_red">신청방법은 사업소 방문, 인터넷, 전화, 모사전송(Fax)으로 신청가능 합니다.</li>
+							</ul>
+
+							<!-- [s]stitle1 -->
+							<div class="stitle1 stitle1_mt1">
+								<h3 class="tit">정수처분해제신청 민원안내</h3>
+							</div>
+							<!-- //[e]stitle1 -->
+
+							<div class="tbl_line_sec1">
+								<table class="tbl_write1" summary="처리기간,처리부서,신청서류,관련법규">
+								<caption><span class="blind">정수처분해제신청 민원안내 내역</span></caption>
+									<colgroup>
+										<col style="width:80px" />
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">처리기간</th>
+											<td class="cell_last">즉시처리</td>
+										</tr>
+										<tr>
+											<th scope="row">처리부서</th>
+											<td class="cell_last">수도사업소 요금과</td>
+										</tr>
+										<tr>
+											<th scope="row">신청서류</th>
+											<td class="cell_last">정수처분해제 신청서</td>
+										</tr>
+										<tr>
+											<th scope="row">관련법규</th>
+											<td class="cell_last">
+												<ul class="notice_lst1 notice_lst1_mt0">
+													<li class="notice_item1">서울특별시수도조례 제43조 3항</li>
+													<li class="notice_item1">서울특별시수도조례 시행규칙 제57조</li>
+												</ul>											
+											</td>
+										</tr>
+									</tbody>
+								</table>							
+							</div>
+
+							<!-- [s]btn_area -->
+							<div class="btn_area align_cn">
+								<div class="btn_area_cont">
+									<button type="button" class="btn_inline btn_submit">온라인 민원신청</button>
+									<button type="button" class="btn_inline">민원처리 결과확인</button>
+								</div>
+							</div>
+							<!-- //[e]btn_area -->
+
+
+						 </div>
+
+
+					</div>
+					<!-- //[e]content_inner -->
+</body>
+</html>
